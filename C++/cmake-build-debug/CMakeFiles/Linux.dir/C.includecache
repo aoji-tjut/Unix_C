@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/CLion/C++/6.Linux系统编程/1.IO/5.dup.c
+/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/2.文件系统/1.stat.c
 stdio.h
 -
 stdlib.h
 -
-unistd.h
--
-fcntl.h
+sys/stat.h
 -
 

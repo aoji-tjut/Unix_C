@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/aoji/Documents/CLion/C++/5.Socket/1.TCP服务器.c" "/Users/aoji/Documents/CLion/C++/cmake-build-debug/CMakeFiles/Socket.dir/5.Socket/1.TCP服务器.c.o"
+  "/Users/aoji/Documents/Unix_C/C++/5.Socket/1.TCP服务器.c" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Socket.dir/5.Socket/1.TCP服务器.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

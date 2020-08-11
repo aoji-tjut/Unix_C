@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/aoji/Documents/CLion/C++/4.Thread/11.mutex、lock_guard.cpp" "/Users/aoji/Documents/CLion/C++/cmake-build-debug/CMakeFiles/Thread.dir/4.Thread/11.mutex、lock_guard.cpp.o"
+  "/Users/aoji/Documents/Unix_C/C++/4.Thread/11.mutex、lock_guard.cpp" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Thread.dir/4.Thread/11.mutex、lock_guard.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
