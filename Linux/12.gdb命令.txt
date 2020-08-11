@@ -1,0 +1,34 @@
+gdb [可执行文件]		启动gdb
+gdb -q [可执行文件]	启动gdb 不打印gdb版本信息
+q			退出gdb
+
+l			查看文件内容(list)
+l [行号/函数名]		查看当前文件某行/函数
+l [文件]:[行号/函数名]	查看指定文件某行/函数
+
+b [行号]			设置某行断点(break)
+b [行号] if [条件]	设置某行条件断点
+clear [行号]		删除某行断点
+i b			查看所有断点信息(info breakpoints)
+delete [断点编号]		删除断点
+delete breakpoints	删除所有断点
+
+r			运行程序(run)
+c			跳至下一个端点处(continue)
+n			执行下一句 不进入函数(next)
+s			执行下一句 进入函数(step)
+u			跳出当前循环(until)
+u [行号]			跳至某行
+finish			执行完当前函数
+
+p [变量]			查看变量值(print)
+ptype [变量]		查看变量类型
+display	[变量]		监控变量值
+i display		查看所有监控变量信息
+undisplay [监控变量编号]	删除监控变量
+set var [变量]=[值]	指定变量参数
+
+layout src		显示源代码窗口
+layout asm		显示反汇编窗口
+layout regs		显示源代码/反汇编和CPU寄存器窗口
+layout split		显示源代码和反汇编窗口

@@ -1,0 +1,34 @@
+gz压缩：只能压缩文件 不能压缩目录 不保留原文件
+gzip [文件] 压缩
+gunzip [文件.gz] 解压缩
+
+bzip2压缩：只能压缩文件 不能压缩目录 压缩比大
+bzip2 [选项] [文件] 压缩
+-k 保留原文件
+bunzip2 [选项] [文件.bz2] 解压缩
+-k 保留原文件
+
+zip压缩：能压缩文件和目录 保留原文件 压缩比小
+zip [选项] [压缩后文件名.zip] [文件/目录] 压缩
+-r 压缩目录
+unzip [文件.zip] [选项] 解压缩
+-d 指定解压目录
+
+tar压缩：将目录打包成tar文件 再与gz/bzip2结合压缩 保留原文件
+tar [选项] [打包/压缩后文件名.tar/.tar.gz] [目录]
+-c 打包
+-x 解包
+-v 显示详细信息
+-f 指定文件名
+-z 压缩gz
+-j 压缩bz2
+-C 指定解压目录
+打包eg：tar -cvf a.tar a
+打包压缩eg：tar -zcf a.tar.gz a
+打包压缩eg：tar -jcf a.tar.bz2 a
+解压eg：tar -zxf a.tar.gz -C ./
+解压eg：tar -jxf a.tar.bz2 -C ./
+
+
+
+

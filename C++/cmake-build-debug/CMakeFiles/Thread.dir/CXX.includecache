@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aoji/Documents/CLion/C++/4.Thread/11.mutex、lock_guard.cpp
+iostream
+-
+thread
+-
+unistd.h
+-
+list
+-
+mutex
+-
+

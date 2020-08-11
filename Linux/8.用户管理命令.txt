@@ -1,0 +1,24 @@
+添加用户：
+sudo adduser [用户名] （执行adduser脚本 不能包含大写）
+sudo useradd [选项] [用户名]
+-s 指定shell
+-g 指定所属组
+-d 指定用户目录
+-m 自动创建用户目录
+
+删除用户：
+sudo deluser [用户名] （执行deluser脚本）
+sudo userdel [选项] [用户名]
+-r 删除用户目录
+
+切换用户：
+su [用户名]
+
+添加用户组：
+sudo groupadd [用户组]
+
+删除用户组：
+sudo groupdel [用户组]
+
+设置密码：
+sudo passwd [用户名]

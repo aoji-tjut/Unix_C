@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aoji/Documents/CLion/C++/1.Grammar/1.数据类型.cpp
+iostream
+-
+
+/Users/aoji/Documents/CLion/C++/1.Grammar/5.结构体枚举联合.cpp
+iostream
+-
+
