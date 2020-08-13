@@ -31,4 +31,33 @@ int main(int argc, char* argv[])
     printf("最后访问时间：%ld\n", st.st_atimespec.tv_sec);
     printf("最后修改时间：%ld\n", st.st_mtimespec.tv_sec);
     printf("状态最后修改时间：%ld\n", st.st_ctimespec.tv_sec);
+
+    if(S_ISREG(st.st_mode))
+    {
+        printf("常规文件\n");
+    }
+    else if(S_ISDIR(st.st_mode))
+    {
+        printf("目录文件\n");
+    }
+    else if(S_ISLNK(st.st_mode))
+    {
+        printf("符号链接文件\n");
+    }
+    else if(S_ISBLK(st.st_mode))
+    {
+        printf("块文件\n");
+    }
+    else if(S_ISSOCK(st.st_mode))
+    {
+        printf("网络套接字文件\n");
+    }
+    else if(S_ISCHR(st.st_mode))
+    {
+        printf("字符设备文件\n");
+    }
+    else if(S_ISFIFO(st.st_mode))
+    {
+        printf("FIFO管道文件\n");
+    }
 }

@@ -3,7 +3,7 @@
 
 int main()
 {
-    FILE* fp = fopen("./1.IO/file.txt", "w+");  //读写形式打开文件 有则清空 无则创建
+    FILE* fp = fopen("./file.txt", "w+");   //读写形式打开文件 有则清空 无则创建
     if(!fp)
     {
         perror("open file error");

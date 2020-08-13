@@ -57,27 +57,27 @@ include CMakeFiles/Linux.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Linux.dir/flags.make
 
-CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.o: CMakeFiles/Linux.dir/flags.make
-CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.o: ../6.Linux系统编程/2.文件系统/1.stat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.o   -c /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/2.文件系统/1.stat.c
+CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.o: CMakeFiles/Linux.dir/flags.make
+CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.o: ../6.Linux系统编程/2.文件系统/3.link.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.o   -c /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/2.文件系统/3.link.c
 
-CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/2.文件系统/1.stat.c > CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.i
+CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/2.文件系统/3.link.c > CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.i
 
-CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/2.文件系统/1.stat.c -o CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.s
+CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/2.文件系统/3.link.c -o CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.s
 
 # Object files for target Linux
 Linux_OBJECTS = \
-"CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.o"
+"CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.o"
 
 # External object files for target Linux
 Linux_EXTERNAL_OBJECTS =
 
-Linux: CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.o
+Linux: CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.o
 Linux: CMakeFiles/Linux.dir/build.make
 Linux: CMakeFiles/Linux.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Linux"

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/1.stat.c.o"
+  "CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.o"
   "Linux"
   "Linux.pdb"
 )
