@@ -336,32 +336,32 @@ Grammar/fast:
 	$(MAKE) -f CMakeFiles/Socket.dir/build.make CMakeFiles/Socket.dir/5.Socket/1.TCP服务器.c.s
 .PHONY : 5.Socket/1.TCP服务器.c.s
 
-6.Linux系统编程/2.文件系统/3.link.o: 6.Linux系统编程/2.文件系统/3.link.c.o
+6.Linux系统编程/2.文件系统/8.glob.o: 6.Linux系统编程/2.文件系统/8.glob.c.o
 
-.PHONY : 6.Linux系统编程/2.文件系统/3.link.o
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.o
 
 # target to build an object file
-6.Linux系统编程/2.文件系统/3.link.c.o:
-	$(MAKE) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.o
-.PHONY : 6.Linux系统编程/2.文件系统/3.link.c.o
+6.Linux系统编程/2.文件系统/8.glob.c.o:
+	$(MAKE) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/8.glob.c.o
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.c.o
 
-6.Linux系统编程/2.文件系统/3.link.i: 6.Linux系统编程/2.文件系统/3.link.c.i
+6.Linux系统编程/2.文件系统/8.glob.i: 6.Linux系统编程/2.文件系统/8.glob.c.i
 
-.PHONY : 6.Linux系统编程/2.文件系统/3.link.i
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.i
 
 # target to preprocess a source file
-6.Linux系统编程/2.文件系统/3.link.c.i:
-	$(MAKE) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.i
-.PHONY : 6.Linux系统编程/2.文件系统/3.link.c.i
+6.Linux系统编程/2.文件系统/8.glob.c.i:
+	$(MAKE) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/8.glob.c.i
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.c.i
 
-6.Linux系统编程/2.文件系统/3.link.s: 6.Linux系统编程/2.文件系统/3.link.c.s
+6.Linux系统编程/2.文件系统/8.glob.s: 6.Linux系统编程/2.文件系统/8.glob.c.s
 
-.PHONY : 6.Linux系统编程/2.文件系统/3.link.s
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.s
 
 # target to generate assembly for a file
-6.Linux系统编程/2.文件系统/3.link.c.s:
-	$(MAKE) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/3.link.c.s
-.PHONY : 6.Linux系统编程/2.文件系统/3.link.c.s
+6.Linux系统编程/2.文件系统/8.glob.c.s:
+	$(MAKE) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/8.glob.c.s
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.c.s
 
 test.o: test.cpp.o
 
@@ -420,9 +420,9 @@ help:
 	@echo "... 5.Socket/1.TCP服务器.o"
 	@echo "... 5.Socket/1.TCP服务器.i"
 	@echo "... 5.Socket/1.TCP服务器.s"
-	@echo "... 6.Linux系统编程/2.文件系统/3.link.o"
-	@echo "... 6.Linux系统编程/2.文件系统/3.link.i"
-	@echo "... 6.Linux系统编程/2.文件系统/3.link.s"
+	@echo "... 6.Linux系统编程/2.文件系统/8.glob.o"
+	@echo "... 6.Linux系统编程/2.文件系统/8.glob.i"
+	@echo "... 6.Linux系统编程/2.文件系统/8.glob.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

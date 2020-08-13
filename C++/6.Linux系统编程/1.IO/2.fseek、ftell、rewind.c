@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//终端运行
 int main()
 {
     FILE* fp = fopen("./file.txt", "w+");   //读写形式打开文件 有则清空 无则创建

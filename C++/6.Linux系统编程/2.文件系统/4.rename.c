@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 //终端运行 传入源文件、目标文件
 int main(int argc, char* argv[])
@@ -11,15 +10,9 @@ int main(int argc, char* argv[])
         exit(-1);
     }
 
-    if(link(argv[1], argv[2]) < 0)  //link命令 硬连接
+    if(rename(argv[1], argv[2]) < 0)    //mv命令 移动/重命名
     {
-        perror("link error");
-        exit(-1);
-    }
-
-    if(unlink(argv[2]) < 0)     //unlinkd命令 同rm 删除文件
-    {
-        perror("unlink error");
+        perror("rename error");
         exit(-1);
     }
 

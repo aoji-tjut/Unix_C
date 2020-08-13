@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//debug执行
+//debug运行
 int main()
 {
     /*
