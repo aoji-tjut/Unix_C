@@ -1,5 +1,4 @@
 #include <iostream>
-#include <typeinfo>
 using namespace std;
 
 //T为int类型
@@ -49,8 +48,8 @@ private:
 
 int main()
 {
-    A<char> a('A');        //A类 传入char类型
-    B<A<char>> b(a);     //B类 传入A类类型
+    A<char> a('A');         //A类 传入char类型
+    B<A<char>> b(a);        //B类 传入A类类型
     b.PrintValue();
 
     return 0;

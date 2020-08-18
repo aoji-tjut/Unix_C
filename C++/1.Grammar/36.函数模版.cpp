@@ -1,5 +1,4 @@
 #include <iostream>
-#include <typeinfo>
 using namespace std;
 
 //泛化函数模版 同一函数可以传入不同类型 仅对下面第一个函数有效 可以发生重载 可以有默认参数类型

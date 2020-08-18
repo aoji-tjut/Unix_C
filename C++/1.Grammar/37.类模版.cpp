@@ -1,5 +1,4 @@
 #include <iostream>
-#include <typeinfo>
 using namespace std;
 
 //类模版 可以有默认类型 仅对下面第一个类有效

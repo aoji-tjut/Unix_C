@@ -1,5 +1,4 @@
 #include <iostream>
-#include <typeinfo>
 using namespace std;
 
 template<typename T>
@@ -45,7 +44,7 @@ int main()
 {
     Father<int>* p = new Son<int>(5);
     p->PrintValue();
-    p->Father::PrintValue();
+    p->Father<int>::PrintValue();
     delete p;
 
     return 0;
