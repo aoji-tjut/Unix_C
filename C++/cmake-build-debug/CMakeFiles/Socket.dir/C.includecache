@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aoji/Documents/Unix_C/C++/5.Socket/1.TCP服务器.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+time.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+
