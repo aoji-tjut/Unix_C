@@ -17,6 +17,7 @@ int main()
     //字符型
     cout << "char\t\t" << sizeof(char) << endl;                 //1字节
 
+
     //bool型
     cout << "bool\t\t" << sizeof(bool) << endl;                 //1字节
 

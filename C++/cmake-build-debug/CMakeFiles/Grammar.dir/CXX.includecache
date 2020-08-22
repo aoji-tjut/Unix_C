@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/1.Grammar/42.二进制文件.cpp
+/Users/aoji/Documents/Unix_C/C++/1.Grammar/13.拷贝构造.cpp
 iostream
--
-string
--
-fstream
 -
 

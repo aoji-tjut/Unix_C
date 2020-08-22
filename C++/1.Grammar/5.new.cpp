@@ -19,6 +19,9 @@ int main()
     delete p;
     delete[] q;
 
+    p = nullptr;
+    q = nullptr;
+
     //delete后可以继续当作栈区指针或堆区指针重新赋值使用
 
     return 0;

@@ -8,7 +8,7 @@ public:
     Student()
     {
         cout << "构造函数" << endl;
-        age = 20;
+        this->age = 20;
     }
 
     //析构函数 无返回值 无参数 不可重载

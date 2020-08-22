@@ -22,6 +22,7 @@ int main()
     int i = 5, j = 10;
 
     cout << i << " " << j << endl;
+    cout << &i << " " << &j << endl;
 
     Swap(&i, &j);
     cout << i << " " << j << endl;

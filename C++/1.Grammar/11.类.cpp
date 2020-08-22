@@ -22,6 +22,7 @@ int main()
     Student* p = new Student;
     p->Show();
     delete p;
+    p = nullptr;
 
     return 0;
 }

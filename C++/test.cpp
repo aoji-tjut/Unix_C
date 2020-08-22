@@ -100,20 +100,19 @@ int main()
 }
 */
 
-
-
 void print(int i)
 {
     cout << i << " ";
 }
 
-void fun(int& i)
+void fff(int& i)
 {
     i = i * 2;
 }
 
 struct S
 {
+private:
     int i;
 
     S()
@@ -167,12 +166,9 @@ int AAA()
     return 6;
 }
 
-
-
 //////////////////////////////////////////////////////////////////////////////////////////
 int main()
 {
-
 
 
 
