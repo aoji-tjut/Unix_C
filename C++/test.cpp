@@ -26,7 +26,6 @@
 #include <tuple>
 using namespace std;
 
-/*
 struct Node
 {
     int data;
@@ -94,91 +93,8 @@ int main()
     Delete(L);
     Delete(L);
     Delete(L);
+
     Print(L);
 
     return 0;
 }
-*/
-
-void print(int i)
-{
-    cout << i << " ";
-}
-
-void fff(int& i)
-{
-    i = i * 2;
-}
-
-struct S
-{
-private:
-    int i;
-
-    S()
-    {
-        cout << "asd";
-    }
-};
-
-void fun()
-{
-    int a[5]{1, 2, 3, 4, 5};
-    for(int i:a)
-    {
-        cout << i << " ";
-    }
-}
-
-void fun(char, int);
-
-int g_i;
-
-typedef int Array[100];
-
-void Swap(int i, int j)
-{
-    cout << &i << endl;
-    cout << &j << endl;
-    int temp;
-    temp = i;
-    i = j;
-    j = temp;
-}
-
-void Point()
-{
-    int i = 10;
-    int j = 20;
-    const int* p = &i;  //常量指针 指向常量的指针
-    int* const q = &i;  //指针常量 指针是一个常量
-    const int* const r = &i;
-    cout << *p << "\t" << *q << "\t" << *r << endl;
-
-    p = &j;
-    *q = 5;
-
-    cout << *p << "\t" << *q << "\t" << *r << endl;
-}
-
-int AAA()
-{
-    return 6;
-}
-
-//////////////////////////////////////////////////////////////////////////////////////////
-int main()
-{
-
-
-
-    return 0;
-}
-//////////////////////////////////////////////////////////////////////////////////////////
-
-
-void fun(char c, int i)
-{
-    cout << c << endl;
-}
-

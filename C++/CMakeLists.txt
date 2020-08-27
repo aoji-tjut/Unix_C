@@ -157,5 +157,4 @@ add_executable(Linux 6.Linux系统编程/1.IO/3.fflush.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/8.glob.c)
 
 
-#add_executable(test test.c)
 add_executable(test test.cpp)
