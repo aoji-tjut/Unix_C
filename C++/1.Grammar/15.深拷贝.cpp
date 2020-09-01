@@ -23,10 +23,10 @@ public:
         //释放堆区
         if(this->age)
         {
-            delete age;
-            age = nullptr;
+            delete this->age;
+            this->age = nullptr;
         }
-        cout << age << endl;
+        cout << this->age << endl;
     }
 
     void Show()

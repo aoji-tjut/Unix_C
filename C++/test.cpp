@@ -85,16 +85,12 @@ void Print(Node* L)
 
 int main()
 {
-    Node* L = nullptr;
 
-    Init(L);
-    Print(L);
 
-    Delete(L);
-    Delete(L);
-    Delete(L);
 
-    Print(L);
+
+
+
 
     return 0;
 }
