@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
     }
 
     char buf[BUFSIZ];
-    if(!getcwd(buf, sizeof(buf)))
+    if(!getcwd(buf, sizeof(buf)))   //pwd命令 获取绝对路径
     {
         perror("getcwd error");
         exit(-1);
@@ -21,7 +21,7 @@ int main(int argc, char* argv[])
     printf("%s\n", buf);
     memset(buf, 0, sizeof(buf));
 
-    if(chdir(argv[1]) < 0)
+    if(chdir(argv[1]) < 0)  //cd命令 更改目录
     {
         perror("chdir error");
         exit(-1);
