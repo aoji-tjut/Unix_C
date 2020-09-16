@@ -112,6 +112,7 @@ int main()
 
     Baby baby;          //构造函数同声明顺序
     baby.PrintAge();
+    cout <<endl;
 
     return 0;
 }

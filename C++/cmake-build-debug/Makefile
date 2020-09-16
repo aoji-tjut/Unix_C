@@ -221,32 +221,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/build
 .PHONY : Grammar/fast
 
-1.Grammar/24.++重载.o: 1.Grammar/24.++重载.cpp.o
+1.Grammar/31.虚继承.o: 1.Grammar/31.虚继承.cpp.o
 
-.PHONY : 1.Grammar/24.++重载.o
+.PHONY : 1.Grammar/31.虚继承.o
 
 # target to build an object file
-1.Grammar/24.++重载.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/24.++重载.cpp.o
-.PHONY : 1.Grammar/24.++重载.cpp.o
+1.Grammar/31.虚继承.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/31.虚继承.cpp.o
+.PHONY : 1.Grammar/31.虚继承.cpp.o
 
-1.Grammar/24.++重载.i: 1.Grammar/24.++重载.cpp.i
+1.Grammar/31.虚继承.i: 1.Grammar/31.虚继承.cpp.i
 
-.PHONY : 1.Grammar/24.++重载.i
+.PHONY : 1.Grammar/31.虚继承.i
 
 # target to preprocess a source file
-1.Grammar/24.++重载.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/24.++重载.cpp.i
-.PHONY : 1.Grammar/24.++重载.cpp.i
+1.Grammar/31.虚继承.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/31.虚继承.cpp.i
+.PHONY : 1.Grammar/31.虚继承.cpp.i
 
-1.Grammar/24.++重载.s: 1.Grammar/24.++重载.cpp.s
+1.Grammar/31.虚继承.s: 1.Grammar/31.虚继承.cpp.s
 
-.PHONY : 1.Grammar/24.++重载.s
+.PHONY : 1.Grammar/31.虚继承.s
 
 # target to generate assembly for a file
-1.Grammar/24.++重载.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/24.++重载.cpp.s
-.PHONY : 1.Grammar/24.++重载.cpp.s
+1.Grammar/31.虚继承.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/31.虚继承.cpp.s
+.PHONY : 1.Grammar/31.虚继承.cpp.s
 
 2.STL/0.iterator_category.o: 2.STL/0.iterator_category.cpp.o
 
@@ -425,9 +425,9 @@ help:
 	@echo "... Socket"
 	@echo "... Thread"
 	@echo "... test"
-	@echo "... 1.Grammar/24.++重载.o"
-	@echo "... 1.Grammar/24.++重载.i"
-	@echo "... 1.Grammar/24.++重载.s"
+	@echo "... 1.Grammar/31.虚继承.o"
+	@echo "... 1.Grammar/31.虚继承.i"
+	@echo "... 1.Grammar/31.虚继承.s"
 	@echo "... 2.STL/0.iterator_category.o"
 	@echo "... 2.STL/0.iterator_category.i"
 	@echo "... 2.STL/0.iterator_category.s"
