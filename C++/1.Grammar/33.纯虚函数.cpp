@@ -98,7 +98,7 @@ int main()
             double r = 0.0;
             cin >> r;
             p = new Circle(r);
-            cout << "GetPerimeter=" << p->GetPerimeter() << endl;
+            cout << "Perimeter=" << p->GetPerimeter() << endl;
             cout << "Area=" << p->GetArea() << endl;
             delete p;
             break;
@@ -110,7 +110,7 @@ int main()
             double width = 0.0;
             cin >> length >> width;
             p = new Rect(length, width);
-            cout << "GetPerimeter=" << p->GetPerimeter() << endl;
+            cout << "Perimeter=" << p->GetPerimeter() << endl;
             cout << "Area=" << p->GetArea() << endl;
             delete p;
             break;
