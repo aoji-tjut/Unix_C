@@ -89,6 +89,7 @@ int main()
 
     cout << "intput '1' Circle" << " / " << "intput '2' Rect" << endl;
     cin >> flag;
+
     switch(flag)
     {
         case 1:

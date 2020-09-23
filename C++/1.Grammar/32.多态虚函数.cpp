@@ -33,7 +33,7 @@ class Son1 : public Father
 public:
     Son1()
     {
-        cout << "Son构造函数" << endl;
+        cout << "Son1构造函数" << endl;
     }
 
     void Fun()
@@ -59,7 +59,7 @@ class Son2 : public Father
 public:
     Son2()
     {
-        cout << "Son构造函数" << endl;
+        cout << "Son2构造函数" << endl;
     }
 
     void Fun()
