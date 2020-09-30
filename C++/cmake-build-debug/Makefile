@@ -221,32 +221,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/build
 .PHONY : Grammar/fast
 
-1.Grammar/33.纯虚函数.o: 1.Grammar/33.纯虚函数.cpp.o
+1.Grammar/36.函数模版.o: 1.Grammar/36.函数模版.cpp.o
 
-.PHONY : 1.Grammar/33.纯虚函数.o
+.PHONY : 1.Grammar/36.函数模版.o
 
 # target to build an object file
-1.Grammar/33.纯虚函数.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/33.纯虚函数.cpp.o
-.PHONY : 1.Grammar/33.纯虚函数.cpp.o
+1.Grammar/36.函数模版.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/36.函数模版.cpp.o
+.PHONY : 1.Grammar/36.函数模版.cpp.o
 
-1.Grammar/33.纯虚函数.i: 1.Grammar/33.纯虚函数.cpp.i
+1.Grammar/36.函数模版.i: 1.Grammar/36.函数模版.cpp.i
 
-.PHONY : 1.Grammar/33.纯虚函数.i
+.PHONY : 1.Grammar/36.函数模版.i
 
 # target to preprocess a source file
-1.Grammar/33.纯虚函数.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/33.纯虚函数.cpp.i
-.PHONY : 1.Grammar/33.纯虚函数.cpp.i
+1.Grammar/36.函数模版.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/36.函数模版.cpp.i
+.PHONY : 1.Grammar/36.函数模版.cpp.i
 
-1.Grammar/33.纯虚函数.s: 1.Grammar/33.纯虚函数.cpp.s
+1.Grammar/36.函数模版.s: 1.Grammar/36.函数模版.cpp.s
 
-.PHONY : 1.Grammar/33.纯虚函数.s
+.PHONY : 1.Grammar/36.函数模版.s
 
 # target to generate assembly for a file
-1.Grammar/33.纯虚函数.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/33.纯虚函数.cpp.s
-.PHONY : 1.Grammar/33.纯虚函数.cpp.s
+1.Grammar/36.函数模版.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/36.函数模版.cpp.s
+.PHONY : 1.Grammar/36.函数模版.cpp.s
 
 2.STL/0.iterator_category.o: 2.STL/0.iterator_category.cpp.o
 
@@ -425,9 +425,9 @@ help:
 	@echo "... Socket"
 	@echo "... Thread"
 	@echo "... test"
-	@echo "... 1.Grammar/33.纯虚函数.o"
-	@echo "... 1.Grammar/33.纯虚函数.i"
-	@echo "... 1.Grammar/33.纯虚函数.s"
+	@echo "... 1.Grammar/36.函数模版.o"
+	@echo "... 1.Grammar/36.函数模版.i"
+	@echo "... 1.Grammar/36.函数模版.s"
 	@echo "... 2.STL/0.iterator_category.o"
 	@echo "... 2.STL/0.iterator_category.i"
 	@echo "... 2.STL/0.iterator_category.s"

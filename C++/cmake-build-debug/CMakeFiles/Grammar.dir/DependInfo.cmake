@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/aoji/Documents/Unix_C/C++/1.Grammar/33.纯虚函数.cpp" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Grammar.dir/1.Grammar/33.纯虚函数.cpp.o"
+  "/Users/aoji/Documents/Unix_C/C++/1.Grammar/36.函数模版.cpp" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Grammar.dir/1.Grammar/36.函数模版.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
