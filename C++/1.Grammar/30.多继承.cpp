@@ -1,13 +1,22 @@
 #include <iostream>
 using namespace std;
 
+class Temp
+{
+public:
+    Temp(int i)
+    {
+        cout << "Temp" << endl;
+    }
+};
+
 class Father1
 {
 public:
-    Father1()
+    Father1(int num)
     {
         cout << "Father1" << endl;
-        this->num = 30;
+        this->num = num;
     }
 
     void PrintNum()
@@ -23,10 +32,10 @@ protected:
 class Father2
 {
 public:
-    Father2()
+    Father2(int num)
     {
         cout << "Father2" << endl;
-        this->num = 20;
+        this->num = num;
     }
 
     void PrintNum()
@@ -40,13 +49,16 @@ protected:
 };
 
 //多继承 Son同时继承Father1和Father2
-class Son : public Father2, public Father1
+class Son : public Father1, public Father2
 {
+private:
+    Temp temp;
+
 public:
-    Son()
+    Son(int father1, int father2, int son) : temp(0), Father2(father2), Father1(father1)
     {
         cout << "Son" << endl;
-        this->num = 10;
+        this->num = son;
     }
 
     void PrintNum()
@@ -64,9 +76,9 @@ private:
 
 int main()
 {
-    Father1 father1;
-    Father2 father2;
-    Son son;    //构造函数同声明顺序
+    Father1 father1(30);
+    Father2 father2(20);
+    Son son(30, 20, 10);  //构造函数同声明顺序
     cout << endl;
 
     cout << sizeof(father1) << endl;

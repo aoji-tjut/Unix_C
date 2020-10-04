@@ -5,7 +5,7 @@ using namespace std;
 template<typename T>
 void Fun(T i)
 {
-    cout << "函数模版" << endl;
+    cout << "泛化模版" << endl;
     cout << typeid(i).name() << " " << i << endl;
 }
 
@@ -13,7 +13,7 @@ void Fun(T i)
 template<>
 void Fun<double>(double d)
 {
-    cout << "函数模版具体化" << endl;
+    cout << "特化模版" << endl;
     cout << typeid(d).name() << " " << d << endl;
 }
 

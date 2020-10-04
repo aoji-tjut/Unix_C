@@ -45,7 +45,7 @@ int main()
     Father<int> father(5);
     father.PrintValue();
 
-    Son<int> son(5);
+    Son<int> son(10);
     son.PrintValue();
 
     return 0;

@@ -24,7 +24,7 @@ template<typename T>
 class Son : public Father<T>
 {
 public:
-    Son(T t) : Father<T>(t)     //初始化列表
+    Son(T t) : Father<T>(t * 2)     //初始化列表
     {
         this->t = t;
     }
