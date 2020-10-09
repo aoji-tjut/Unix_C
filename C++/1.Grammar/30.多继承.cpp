@@ -74,18 +74,18 @@ private:
 
 int main()
 {
-//    Father1 father1(30);
-//    Father2 father2(20);
+    Father1 father1(30);
+    Father2 father2(20);
     Son son(30, 20, 10);  //构造函数同声明顺序
     cout << endl;
 
-//    cout << sizeof(father1) << endl;
-//    cout << sizeof(father2) << endl;
+    cout << sizeof(father1) << endl;
+    cout << sizeof(father2) << endl;
     cout << sizeof(son) << endl;
     cout << endl;
 
-//    father1.PrintNum();
-//    father2.PrintNum();
+    father1.PrintNum();
+    father2.PrintNum();
     son.PrintNum();
 
     return 0;

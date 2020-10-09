@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Algorithm
+
+# Build rule for target.
+Algorithm: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Algorithm
+.PHONY : Algorithm
+
+# fast build rule for target.
+Algorithm/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/build
+.PHONY : Algorithm/fast
+
+#=============================================================================
 # Target rules for targets named Linux
 
 # Build rule for target.
@@ -383,6 +396,33 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/1.IO/3.fflush.c.s
 .PHONY : 6.Linux系统编程/1.IO/3.fflush.c.s
 
+7.Algorithm/1.Search/1.SequentialSearch.o: 7.Algorithm/1.Search/1.SequentialSearch.cpp.o
+
+.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.o
+
+# target to build an object file
+7.Algorithm/1.Search/1.SequentialSearch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/1.Search/1.SequentialSearch.cpp.o
+.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.cpp.o
+
+7.Algorithm/1.Search/1.SequentialSearch.i: 7.Algorithm/1.Search/1.SequentialSearch.cpp.i
+
+.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.i
+
+# target to preprocess a source file
+7.Algorithm/1.Search/1.SequentialSearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/1.Search/1.SequentialSearch.cpp.i
+.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.cpp.i
+
+7.Algorithm/1.Search/1.SequentialSearch.s: 7.Algorithm/1.Search/1.SequentialSearch.cpp.s
+
+.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.s
+
+# target to generate assembly for a file
+7.Algorithm/1.Search/1.SequentialSearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/1.Search/1.SequentialSearch.cpp.s
+.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.cpp.s
+
 test.o: test.cpp.o
 
 .PHONY : test.o
@@ -418,6 +458,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Algorithm"
 	@echo "... Grammar"
 	@echo "... Linux"
 	@echo "... Memory"
@@ -443,6 +484,9 @@ help:
 	@echo "... 6.Linux系统编程/1.IO/3.fflush.o"
 	@echo "... 6.Linux系统编程/1.IO/3.fflush.i"
 	@echo "... 6.Linux系统编程/1.IO/3.fflush.s"
+	@echo "... 7.Algorithm/1.Search/1.SequentialSearch.o"
+	@echo "... 7.Algorithm/1.Search/1.SequentialSearch.i"
+	@echo "... 7.Algorithm/1.Search/1.SequentialSearch.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
