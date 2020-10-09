@@ -51,9 +51,6 @@ protected:
 //多继承 Son同时继承Father1和Father2
 class Son : public Father1, public Father2
 {
-private:
-    Temp temp;
-
 public:
     Son(int father1, int father2, int son) : temp(0), Father2(father2), Father1(father1)
     {
@@ -71,23 +68,24 @@ public:
     }
 
 private:
+    Temp temp;
     int num;
 };
 
 int main()
 {
-    Father1 father1(30);
-    Father2 father2(20);
+//    Father1 father1(30);
+//    Father2 father2(20);
     Son son(30, 20, 10);  //构造函数同声明顺序
     cout << endl;
 
-    cout << sizeof(father1) << endl;
-    cout << sizeof(father2) << endl;
+//    cout << sizeof(father1) << endl;
+//    cout << sizeof(father2) << endl;
     cout << sizeof(son) << endl;
     cout << endl;
 
-    father1.PrintNum();
-    father2.PrintNum();
+//    father1.PrintNum();
+//    father2.PrintNum();
     son.PrintNum();
 
     return 0;
