@@ -6,6 +6,5 @@
 ### Thread
 ### Socket
 ### Linux
-## Git
-## Leetcode
+### Algorithm
 ## Linux
