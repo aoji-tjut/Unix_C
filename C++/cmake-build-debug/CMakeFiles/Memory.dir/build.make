@@ -77,27 +77,27 @@ include CMakeFiles/Memory.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Memory.dir/flags.make
 
-CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.o: CMakeFiles/Memory.dir/flags.make
-CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.o: ../3.Memory/2.重载new、delete.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.o -c /Users/aoji/Documents/Unix_C/C++/3.Memory/2.重载new、delete.cpp
+CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.o: CMakeFiles/Memory.dir/flags.make
+CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.o: ../3.Memory/1.动态分配.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.o -c /Users/aoji/Documents/Unix_C/C++/3.Memory/1.动态分配.cpp
 
-CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aoji/Documents/Unix_C/C++/3.Memory/2.重载new、delete.cpp > CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.i
+CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/aoji/Documents/Unix_C/C++/3.Memory/1.动态分配.cpp > CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.i
 
-CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aoji/Documents/Unix_C/C++/3.Memory/2.重载new、delete.cpp -o CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.s
+CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/aoji/Documents/Unix_C/C++/3.Memory/1.动态分配.cpp -o CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.s
 
 # Object files for target Memory
 Memory_OBJECTS = \
-"CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.o"
+"CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.o"
 
 # External object files for target Memory
 Memory_EXTERNAL_OBJECTS =
 
-Memory: CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.o
+Memory: CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.o
 Memory: CMakeFiles/Memory.dir/build.make
 Memory: CMakeFiles/Memory.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Memory"

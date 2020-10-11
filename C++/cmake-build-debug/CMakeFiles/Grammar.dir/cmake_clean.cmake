@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Grammar.dir/1.Grammar/30.多继承.cpp.o"
+  "CMakeFiles/Grammar.dir/1.Grammar/5.new.cpp.o"
   "Grammar"
   "Grammar.pdb"
 )

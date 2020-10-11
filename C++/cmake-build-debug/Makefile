@@ -234,32 +234,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/build
 .PHONY : Grammar/fast
 
-1.Grammar/30.多继承.o: 1.Grammar/30.多继承.cpp.o
+1.Grammar/5.new.o: 1.Grammar/5.new.cpp.o
 
-.PHONY : 1.Grammar/30.多继承.o
+.PHONY : 1.Grammar/5.new.o
 
 # target to build an object file
-1.Grammar/30.多继承.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/30.多继承.cpp.o
-.PHONY : 1.Grammar/30.多继承.cpp.o
+1.Grammar/5.new.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/5.new.cpp.o
+.PHONY : 1.Grammar/5.new.cpp.o
 
-1.Grammar/30.多继承.i: 1.Grammar/30.多继承.cpp.i
+1.Grammar/5.new.i: 1.Grammar/5.new.cpp.i
 
-.PHONY : 1.Grammar/30.多继承.i
+.PHONY : 1.Grammar/5.new.i
 
 # target to preprocess a source file
-1.Grammar/30.多继承.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/30.多继承.cpp.i
-.PHONY : 1.Grammar/30.多继承.cpp.i
+1.Grammar/5.new.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/5.new.cpp.i
+.PHONY : 1.Grammar/5.new.cpp.i
 
-1.Grammar/30.多继承.s: 1.Grammar/30.多继承.cpp.s
+1.Grammar/5.new.s: 1.Grammar/5.new.cpp.s
 
-.PHONY : 1.Grammar/30.多继承.s
+.PHONY : 1.Grammar/5.new.s
 
 # target to generate assembly for a file
-1.Grammar/30.多继承.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/30.多继承.cpp.s
-.PHONY : 1.Grammar/30.多继承.cpp.s
+1.Grammar/5.new.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Grammar.dir/build.make CMakeFiles/Grammar.dir/1.Grammar/5.new.cpp.s
+.PHONY : 1.Grammar/5.new.cpp.s
 
 2.STL/0.iterator_category.o: 2.STL/0.iterator_category.cpp.o
 
@@ -288,32 +288,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/STL.dir/build.make CMakeFiles/STL.dir/2.STL/0.iterator_category.cpp.s
 .PHONY : 2.STL/0.iterator_category.cpp.s
 
-3.Memory/2.重载new、delete.o: 3.Memory/2.重载new、delete.cpp.o
+3.Memory/1.动态分配.o: 3.Memory/1.动态分配.cpp.o
 
-.PHONY : 3.Memory/2.重载new、delete.o
+.PHONY : 3.Memory/1.动态分配.o
 
 # target to build an object file
-3.Memory/2.重载new、delete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.o
-.PHONY : 3.Memory/2.重载new、delete.cpp.o
+3.Memory/1.动态分配.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.o
+.PHONY : 3.Memory/1.动态分配.cpp.o
 
-3.Memory/2.重载new、delete.i: 3.Memory/2.重载new、delete.cpp.i
+3.Memory/1.动态分配.i: 3.Memory/1.动态分配.cpp.i
 
-.PHONY : 3.Memory/2.重载new、delete.i
+.PHONY : 3.Memory/1.动态分配.i
 
 # target to preprocess a source file
-3.Memory/2.重载new、delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.i
-.PHONY : 3.Memory/2.重载new、delete.cpp.i
+3.Memory/1.动态分配.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.i
+.PHONY : 3.Memory/1.动态分配.cpp.i
 
-3.Memory/2.重载new、delete.s: 3.Memory/2.重载new、delete.cpp.s
+3.Memory/1.动态分配.s: 3.Memory/1.动态分配.cpp.s
 
-.PHONY : 3.Memory/2.重载new、delete.s
+.PHONY : 3.Memory/1.动态分配.s
 
 # target to generate assembly for a file
-3.Memory/2.重载new、delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/3.Memory/2.重载new、delete.cpp.s
-.PHONY : 3.Memory/2.重载new、delete.cpp.s
+3.Memory/1.动态分配.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Memory.dir/build.make CMakeFiles/Memory.dir/3.Memory/1.动态分配.cpp.s
+.PHONY : 3.Memory/1.动态分配.cpp.s
 
 4.Thread/11.mutex、lock_guard.o: 4.Thread/11.mutex、lock_guard.cpp.o
 
@@ -466,15 +466,15 @@ help:
 	@echo "... Socket"
 	@echo "... Thread"
 	@echo "... test"
-	@echo "... 1.Grammar/30.多继承.o"
-	@echo "... 1.Grammar/30.多继承.i"
-	@echo "... 1.Grammar/30.多继承.s"
+	@echo "... 1.Grammar/5.new.o"
+	@echo "... 1.Grammar/5.new.i"
+	@echo "... 1.Grammar/5.new.s"
 	@echo "... 2.STL/0.iterator_category.o"
 	@echo "... 2.STL/0.iterator_category.i"
 	@echo "... 2.STL/0.iterator_category.s"
-	@echo "... 3.Memory/2.重载new、delete.o"
-	@echo "... 3.Memory/2.重载new、delete.i"
-	@echo "... 3.Memory/2.重载new、delete.s"
+	@echo "... 3.Memory/1.动态分配.o"
+	@echo "... 3.Memory/1.动态分配.i"
+	@echo "... 3.Memory/1.动态分配.s"
 	@echo "... 4.Thread/11.mutex、lock_guard.o"
 	@echo "... 4.Thread/11.mutex、lock_guard.i"
 	@echo "... 4.Thread/11.mutex、lock_guard.s"

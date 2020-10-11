@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/1.Grammar/5.new.cpp
+/Users/aoji/Documents/Unix_C/C++/3.Memory/1.动态分配.cpp
 iostream
+-
+cstdlib
+-
+vector
 -
 
