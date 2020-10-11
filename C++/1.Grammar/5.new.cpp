@@ -21,10 +21,10 @@ int main()
     delete[] arr1;
     cout << endl;
 
-    //2D
+    //2D(1)
     int row = 2;
     int col = 3;
-    int (* arr2_1)[3] = new int[row][3];    //必须常量
+    int (* arr2_1)[3] = new int[row][3];    //内存连续
     for(int i = 0; i < row; i++)
     {
         static int k = 0;
@@ -46,6 +46,7 @@ int main()
     delete[] arr2_1;
     cout << endl;
 
+    //2D(2)
     int** arr2_2 = new int* [row];  //内存不连续
     for(int i = 0; i < row; i++)
     {
