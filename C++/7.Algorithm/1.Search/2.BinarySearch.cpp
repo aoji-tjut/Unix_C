@@ -41,7 +41,7 @@ int BinarySearch(vector<int>& v, int n, int value)
     int mid;
     while(low <= high)
     {
-        mid = (low + high) / 2;
+        mid = low + (high - low) / 2;
 
         if(value > v[mid])
         {

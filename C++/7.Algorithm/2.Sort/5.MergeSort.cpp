@@ -40,7 +40,7 @@ void MergeSort(vector<int>& v, int start, int end)
         return;
     }
 
-    int mid = (start + end) / 2;
+    int mid = start + (end - start) / 2;
     MergeSort(v, start, mid);
     MergeSort(v, mid + 1, end);
 
