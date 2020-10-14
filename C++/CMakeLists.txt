@@ -154,9 +154,9 @@ add_executable(Linux 6.Linux系统编程/1.IO/3.fflush.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/8.glob.c)
 
 
-add_executable(Algorithm 7.Algorithm/1.Search/1.SequentialSearch.cpp)
+#add_executable(Algorithm 7.Algorithm/1.Search/1.SequentialSearch.cpp)
 #add_executable(Algorithm 7.Algorithm/1.Search/2.BinarySearch.cpp)
-#add_executable(Algorithm 7.Algorithm/1.Search/3.HashSearch.cpp)
+add_executable(Algorithm 7.Algorithm/1.Search/3.HashSearch.cpp)
 #add_executable(Algorithm 7.Algorithm/2.Sort/1.BubbleSort.cpp)
 #add_executable(Algorithm 7.Algorithm/2.Sort/2.SelctionSort.cpp)
 #add_executable(Algorithm 7.Algorithm/2.Sort/3.InsertionSort.cpp)

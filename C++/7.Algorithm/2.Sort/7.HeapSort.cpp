@@ -32,7 +32,7 @@ void Heapify(vector<int>& v, int n, int parent)
     if(max != parent)
     {
         Swap(v, parent, max);   //交换节点值
-        Heapify(v, n, max);     //递归调整子树
+        Heapify(v, n, max);     //递归调整子堆
     }
 }
 

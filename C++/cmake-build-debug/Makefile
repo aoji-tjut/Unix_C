@@ -396,32 +396,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/1.IO/3.fflush.c.s
 .PHONY : 6.Linux系统编程/1.IO/3.fflush.c.s
 
-7.Algorithm/1.Search/1.SequentialSearch.o: 7.Algorithm/1.Search/1.SequentialSearch.cpp.o
+7.Algorithm/1.Search/3.HashSearch.o: 7.Algorithm/1.Search/3.HashSearch.cpp.o
 
-.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.o
+.PHONY : 7.Algorithm/1.Search/3.HashSearch.o
 
 # target to build an object file
-7.Algorithm/1.Search/1.SequentialSearch.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/1.Search/1.SequentialSearch.cpp.o
-.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.cpp.o
+7.Algorithm/1.Search/3.HashSearch.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/1.Search/3.HashSearch.cpp.o
+.PHONY : 7.Algorithm/1.Search/3.HashSearch.cpp.o
 
-7.Algorithm/1.Search/1.SequentialSearch.i: 7.Algorithm/1.Search/1.SequentialSearch.cpp.i
+7.Algorithm/1.Search/3.HashSearch.i: 7.Algorithm/1.Search/3.HashSearch.cpp.i
 
-.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.i
+.PHONY : 7.Algorithm/1.Search/3.HashSearch.i
 
 # target to preprocess a source file
-7.Algorithm/1.Search/1.SequentialSearch.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/1.Search/1.SequentialSearch.cpp.i
-.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.cpp.i
+7.Algorithm/1.Search/3.HashSearch.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/1.Search/3.HashSearch.cpp.i
+.PHONY : 7.Algorithm/1.Search/3.HashSearch.cpp.i
 
-7.Algorithm/1.Search/1.SequentialSearch.s: 7.Algorithm/1.Search/1.SequentialSearch.cpp.s
+7.Algorithm/1.Search/3.HashSearch.s: 7.Algorithm/1.Search/3.HashSearch.cpp.s
 
-.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.s
+.PHONY : 7.Algorithm/1.Search/3.HashSearch.s
 
 # target to generate assembly for a file
-7.Algorithm/1.Search/1.SequentialSearch.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/1.Search/1.SequentialSearch.cpp.s
-.PHONY : 7.Algorithm/1.Search/1.SequentialSearch.cpp.s
+7.Algorithm/1.Search/3.HashSearch.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/1.Search/3.HashSearch.cpp.s
+.PHONY : 7.Algorithm/1.Search/3.HashSearch.cpp.s
 
 test.o: test.cpp.o
 
@@ -484,9 +484,9 @@ help:
 	@echo "... 6.Linux系统编程/1.IO/3.fflush.o"
 	@echo "... 6.Linux系统编程/1.IO/3.fflush.i"
 	@echo "... 6.Linux系统编程/1.IO/3.fflush.s"
-	@echo "... 7.Algorithm/1.Search/1.SequentialSearch.o"
-	@echo "... 7.Algorithm/1.Search/1.SequentialSearch.i"
-	@echo "... 7.Algorithm/1.Search/1.SequentialSearch.s"
+	@echo "... 7.Algorithm/1.Search/3.HashSearch.o"
+	@echo "... 7.Algorithm/1.Search/3.HashSearch.i"
+	@echo "... 7.Algorithm/1.Search/3.HashSearch.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"

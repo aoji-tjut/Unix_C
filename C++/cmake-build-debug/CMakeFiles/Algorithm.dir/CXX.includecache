@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/7.Algorithm/1.Search/1.SequentialSearch.cpp
+/Users/aoji/Documents/Unix_C/C++/7.Algorithm/1.Search/3.HashSearch.cpp
 iostream
 -
 vector
