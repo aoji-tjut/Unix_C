@@ -18,7 +18,6 @@ void Heapify(vector<int>& v, int n, int parent)
     int left_child = 2 * parent + 1;
     int right_child = 2 * parent + 2;
     int max = parent;   //最大值索引
-    int temp;
 
     if(left_child < n && v[left_child] > v[max])
     {
