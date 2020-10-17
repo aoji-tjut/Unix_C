@@ -54,7 +54,7 @@ void HeapSort(vector<int>& v, int n)
 {
     BuildHeap(v, n);    //建堆
 
-    for(int i = n - 1; i >= 0; i--)
+    for(int i = n - 1; i > 0; i--)
     {
         Swap(v, i, 0);      //堆顶节点(最大值)与最后一个节点交换
         Heapify(v, i, 0);   //调整除最后一个节点(最大值)剩下的节点 根节点以下已经为堆结构无需调整
