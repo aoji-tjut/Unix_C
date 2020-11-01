@@ -9,13 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fab57361-cca7-4d5c-b407-0c3984a99edd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/C++/1.Grammar/30.多继承.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/C++/1.Grammar/30.多继承.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git/Git.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git/command.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leetcode/三数之和.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Leetcode/长度最小子数组.cpp" beforeDir="false" />
-    </list>
+    <list default="true" id="fab57361-cca7-4d5c-b407-0c3984a99edd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,10 +41,17 @@
       <option name="presentableId" value="Default" />
       <updated>1602246638312</updated>
       <workItem from="1602246639453" duration="128000" />
+      <workItem from="1604240613743" duration="34000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604240632209">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1604240632209" />
   </component>
 </project>
