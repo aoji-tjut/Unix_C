@@ -26,38 +26,48 @@
 #include <tuple>
 using namespace std;
 
-int arrangeCoins(int n)
+vector<int> findErrorNums(vector<int>& nums)
 {
-    int low = 1;
-    int high = n;
-    long mid, sum;
+    vector<int> res;
+    set<int> s;
 
-    while(low <= high)
+    for(auto i:nums)
     {
-        mid = low + (high - low) / 2;
-        sum = mid * (mid + 1) / 2;
-        if(sum == n)
+        auto temp = s.insert(i);
+        if(!temp.second)
         {
-            return (int) mid;
-        }
-        else if(n > sum)
-        {
-            low = (int) mid + 1;
-        }
-        else
-        {
-            high = (int) mid - 1;
+            res.push_back(i);
         }
     }
 
-    return high;
+    int temp=1;
+    for(auto i:s)
+    {
+        if(i!=temp)
+        {
+            res.push_back(temp);
+            break;
+        }
+        temp++;
+    }
+
+    if(res.size()==1)
+    {
+        res.push_back(temp);
+    }
+
+    return res;
 }
 
 int main()
 {
-    vector<int> v1{};
-    vector<int> v2{1, 1};
-    cout << arrangeCoins(1804289383);
+    vector<int> v1{1, 2, 2, 4};
+    vector<int> v2;
+    v2 = findErrorNums(v1);
+    for(auto i:v2)
+    {
+        cout << i << " ";
+    }
 
     return 0;
 }
