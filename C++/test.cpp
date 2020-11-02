@@ -26,57 +26,50 @@
 #include <tuple>
 using namespace std;
 
-string mostCommonWord(string paragraph, vector<string>& banned)
+vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
 {
-    map<string, int> m_s;
-    map<string, int> m_v;
-    map<int, string, greater<>> res;
+    vector<int> res;
+    set<int> s1,s2;
+    map<int, int> m;
 
-    for(const auto& i :banned)
+    for(auto i:nums1)
     {
-        m_v[i]++;
+        s1.insert(i);
+    }
+    for(auto i:nums2)
+    {
+        s2.insert(i);
     }
 
-    string temp;
-    for(char & i : paragraph)
+    for(auto i:s1)
     {
-        if(i >= 'A' && i <= 'Z')
-        {
-            i = tolower(i);
-        }
+        m[i]++;
+    }
+    for(auto i:s2)
+    {
+        m[i]++;
+    }
 
-        if(i >= 'a' && i <= 'z')
+    for(auto i:m)
+    {
+        if(i.second > 1)
         {
-            temp.push_back(i);
-        }
-        else
-        {
-            if(m_v.find(temp) == m_v.end() && !temp.empty())
-            {
-                m_s[temp]++;
-            }
-
-            temp.clear();
+            res.push_back(i.first);
         }
     }
 
-    if(m_v.find(temp) == m_v.end())
-    {
-        m_s[temp]++;
-    }
-
-    for(const auto& i :m_s)
-    {
-        res[i.second] = i.first;
-    }
-
-    return res.begin()->second;
+    return res;
 }
 
 int main()
 {
-    vector<string> v{"bob", "hit"};
-    cout << mostCommonWord("Bob. hIt, baLl", v);
+    vector<int> v1{};
+    vector<int> v2{1,1};
+    vector<int> res = intersection(v1, v2);
+    for(auto i:res)
+    {
+        cout << i << " ";
+    }
 
     return 0;
 }
