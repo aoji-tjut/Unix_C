@@ -26,50 +26,38 @@
 #include <tuple>
 using namespace std;
 
-vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
+int arrangeCoins(int n)
 {
-    vector<int> res;
-    set<int> s1, s2;
-    map<int, int> m;
+    int low = 1;
+    int high = n;
+    long mid, sum;
 
-    for(auto i:nums1)
+    while(low <= high)
     {
-        s1.insert(i);
-    }
-    for(auto i:nums2)
-    {
-        s2.insert(i);
-    }
-
-    for(auto i:s1)
-    {
-        m[i]++;
-    }
-    for(auto i:s2)
-    {
-        m[i]++;
-    }
-
-    for(auto i:m)
-    {
-        if(i.second > 1)
+        mid = low + (high - low) / 2;
+        sum = mid * (mid + 1) / 2;
+        if(sum == n)
         {
-            res.push_back(i.first);
+            return (int) mid;
+        }
+        else if(n > sum)
+        {
+            low = (int) mid + 1;
+        }
+        else
+        {
+            high = (int) mid - 1;
         }
     }
 
-    return res;
+    return high;
 }
 
 int main()
 {
     vector<int> v1{};
     vector<int> v2{1, 1};
-    vector<int> res = intersection(v1, v2);
-    for(auto i:res)
-    {
-        cout << i << " ";
-    }
+    cout << arrangeCoins(1804289383);
 
     return 0;
 }
