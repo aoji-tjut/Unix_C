@@ -32,22 +32,22 @@ string mostCommonWord(string paragraph, vector<string>& banned)
     map<string, int> m_v;
     map<int, string, greater<>> res;
 
-    for(auto i :banned)
+    for(const auto& i :banned)
     {
         m_v[i]++;
     }
 
     string temp;
-    for(int i = 0; i < paragraph.size(); i++)
+    for(char & i : paragraph)
     {
-        if(paragraph[i] >= 'A' && paragraph[i] <= 'Z')
+        if(i >= 'A' && i <= 'Z')
         {
-            paragraph[i] = tolower(paragraph[i]);
+            i = tolower(i);
         }
 
-        if(paragraph[i] >= 'a' && paragraph[i] <= 'z')
+        if(i >= 'a' && i <= 'z')
         {
-            temp.push_back(paragraph[i]);
+            temp.push_back(i);
         }
         else
         {
@@ -65,7 +65,7 @@ string mostCommonWord(string paragraph, vector<string>& banned)
         m_s[temp]++;
     }
 
-    for(auto i :m_s)
+    for(const auto& i :m_s)
     {
         res[i.second] = i.first;
     }
