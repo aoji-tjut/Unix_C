@@ -29,7 +29,7 @@ using namespace std;
 vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
 {
     vector<int> res;
-    set<int> s1,s2;
+    set<int> s1, s2;
     map<int, int> m;
 
     for(auto i:nums1)
@@ -64,7 +64,7 @@ vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
 int main()
 {
     vector<int> v1{};
-    vector<int> v2{1,1};
+    vector<int> v2{1, 1};
     vector<int> res = intersection(v1, v2);
     for(auto i:res)
     {
