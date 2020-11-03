@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
     {
         close(fd);  //关闭下标3的fd
     }
-    
+
     for(int i = 2; i < argc; i++)
     {
         puts(argv[i]);  //new_fd(下标为1)输出
