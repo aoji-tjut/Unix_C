@@ -369,32 +369,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Socket.dir/build.make CMakeFiles/Socket.dir/5.Socket/1.TCP服务器.c.s
 .PHONY : 5.Socket/1.TCP服务器.c.s
 
-6.Linux系统编程/1.IO/3.fflush.o: 6.Linux系统编程/1.IO/3.fflush.c.o
+6.Linux系统编程/2.文件系统/8.glob.o: 6.Linux系统编程/2.文件系统/8.glob.c.o
 
-.PHONY : 6.Linux系统编程/1.IO/3.fflush.o
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.o
 
 # target to build an object file
-6.Linux系统编程/1.IO/3.fflush.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/1.IO/3.fflush.c.o
-.PHONY : 6.Linux系统编程/1.IO/3.fflush.c.o
+6.Linux系统编程/2.文件系统/8.glob.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/8.glob.c.o
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.c.o
 
-6.Linux系统编程/1.IO/3.fflush.i: 6.Linux系统编程/1.IO/3.fflush.c.i
+6.Linux系统编程/2.文件系统/8.glob.i: 6.Linux系统编程/2.文件系统/8.glob.c.i
 
-.PHONY : 6.Linux系统编程/1.IO/3.fflush.i
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.i
 
 # target to preprocess a source file
-6.Linux系统编程/1.IO/3.fflush.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/1.IO/3.fflush.c.i
-.PHONY : 6.Linux系统编程/1.IO/3.fflush.c.i
+6.Linux系统编程/2.文件系统/8.glob.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/8.glob.c.i
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.c.i
 
-6.Linux系统编程/1.IO/3.fflush.s: 6.Linux系统编程/1.IO/3.fflush.c.s
+6.Linux系统编程/2.文件系统/8.glob.s: 6.Linux系统编程/2.文件系统/8.glob.c.s
 
-.PHONY : 6.Linux系统编程/1.IO/3.fflush.s
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.s
 
 # target to generate assembly for a file
-6.Linux系统编程/1.IO/3.fflush.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/1.IO/3.fflush.c.s
-.PHONY : 6.Linux系统编程/1.IO/3.fflush.c.s
+6.Linux系统编程/2.文件系统/8.glob.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/8.glob.c.s
+.PHONY : 6.Linux系统编程/2.文件系统/8.glob.c.s
 
 7.Algorithm/2.Sort/7.HeapSort.o: 7.Algorithm/2.Sort/7.HeapSort.cpp.o
 
@@ -481,9 +481,9 @@ help:
 	@echo "... 5.Socket/1.TCP服务器.o"
 	@echo "... 5.Socket/1.TCP服务器.i"
 	@echo "... 5.Socket/1.TCP服务器.s"
-	@echo "... 6.Linux系统编程/1.IO/3.fflush.o"
-	@echo "... 6.Linux系统编程/1.IO/3.fflush.i"
-	@echo "... 6.Linux系统编程/1.IO/3.fflush.s"
+	@echo "... 6.Linux系统编程/2.文件系统/8.glob.o"
+	@echo "... 6.Linux系统编程/2.文件系统/8.glob.i"
+	@echo "... 6.Linux系统编程/2.文件系统/8.glob.s"
 	@echo "... 7.Algorithm/2.Sort/7.HeapSort.o"
 	@echo "... 7.Algorithm/2.Sort/7.HeapSort.i"
 	@echo "... 7.Algorithm/2.Sort/7.HeapSort.s"

@@ -26,37 +26,28 @@
 #include <tuple>
 using namespace std;
 
-vector<int> findErrorNums(vector<int>& nums)
+bool validMountainArray(vector<int>& A)
 {
-    vector<int> res;
-    set<int> s;
+    int size = A.size();
+    int l = 0;
+    int r = size - 1;
 
-    for(auto i:nums)
+    while(l + 1 < size && A[l] < A[l + 1])
     {
-        auto temp = s.insert(i);
-        if(!temp.second)
-        {
-            res.push_back(i);
-        }
+        l++;
     }
 
-    int temp=1;
-    for(auto i:s)
+    while(r > 0 && A[r - 1] > A[r])
     {
-        if(i!=temp)
-        {
-            res.push_back(temp);
-            break;
-        }
-        temp++;
+        r--;
     }
 
-    if(res.size()==1)
+    if((l > 0) && (r < size - 1) && (l == r))
     {
-        res.push_back(temp);
+        return true;
     }
 
-    return res;
+    return false;
 }
 
 int main()

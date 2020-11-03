@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
     scanf("%s", path);
 
     glob_t glob_res;    //匹配文件的结果
-    if(glob(path, 0, ErrFunc, &glob_res) != 0)  //通配符 特殊标志 出错函数指针 结构体指针
+    if(glob(path, 0, ErrFunc, &glob_res) != 0)  //目录+通配符 特殊标志 出错函数指针 结构体指针
     {
         perror("glob error");
         exit(-1);

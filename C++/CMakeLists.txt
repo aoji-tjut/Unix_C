@@ -141,7 +141,7 @@ add_executable(Socket 5.Socket/1.TCP服务器.c)
 
 #add_executable(Linux 6.Linux系统编程/1.IO/1.fprintf、sprintf、snprintf.c)
 #add_executable(Linux 6.Linux系统编程/1.IO/2.fseek、ftell、rewind.c)
-add_executable(Linux 6.Linux系统编程/1.IO/3.fflush.c)
+#add_executable(Linux 6.Linux系统编程/1.IO/3.fflush.c)
 #add_executable(Linux 6.Linux系统编程/1.IO/4.open、read、write.c)
 #add_executable(Linux 6.Linux系统编程/1.IO/5.dup.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/1.stat.c)
@@ -151,7 +151,7 @@ add_executable(Linux 6.Linux系统编程/1.IO/3.fflush.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/5.remove.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/6.mkdir、rmdir.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/7.getcwd、chdir.c)
-#add_executable(Linux 6.Linux系统编程/2.文件系统/8.glob.c)
+add_executable(Linux 6.Linux系统编程/2.文件系统/8.glob.c)
 
 
 #add_executable(Algorithm 7.Algorithm/1.Search/1.SequentialSearch.cpp)
