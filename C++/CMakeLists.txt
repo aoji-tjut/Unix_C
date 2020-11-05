@@ -163,7 +163,8 @@ add_executable(Linux 6.Linux系统编程/2.文件系统/8.glob.c)
 #add_executable(Algorithm 7.Algorithm/2.Sort/4.ShellSort.cpp)
 #add_executable(Algorithm 7.Algorithm/2.Sort/5.MergeSort.cpp)
 #add_executable(Algorithm 7.Algorithm/2.Sort/6.QuickSort.cpp)
-add_executable(Algorithm 7.Algorithm/2.Sort/7.HeapSort.cpp)
+#add_executable(Algorithm 7.Algorithm/2.Sort/7.HeapSort.cpp)
+add_executable(Algorithm 7.Algorithm/3.BinaryTree/1.Build.cpp)
 
 
 add_executable(test test.cpp)

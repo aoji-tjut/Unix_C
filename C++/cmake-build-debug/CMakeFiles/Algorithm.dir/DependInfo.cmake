@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/aoji/Documents/Unix_C/C++/7.Algorithm/2.Sort/7.HeapSort.cpp" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/7.Algorithm/2.Sort/7.HeapSort.cpp.o"
+  "/Users/aoji/Documents/Unix_C/C++/7.Algorithm/3.BinaryTree/1.Build.cpp" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/7.Algorithm/3.BinaryTree/1.Build.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

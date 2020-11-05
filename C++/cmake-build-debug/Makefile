@@ -396,32 +396,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/2.文件系统/8.glob.c.s
 .PHONY : 6.Linux系统编程/2.文件系统/8.glob.c.s
 
-7.Algorithm/2.Sort/7.HeapSort.o: 7.Algorithm/2.Sort/7.HeapSort.cpp.o
+7.Algorithm/3.BinaryTree/1.Build.o: 7.Algorithm/3.BinaryTree/1.Build.cpp.o
 
-.PHONY : 7.Algorithm/2.Sort/7.HeapSort.o
+.PHONY : 7.Algorithm/3.BinaryTree/1.Build.o
 
 # target to build an object file
-7.Algorithm/2.Sort/7.HeapSort.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/2.Sort/7.HeapSort.cpp.o
-.PHONY : 7.Algorithm/2.Sort/7.HeapSort.cpp.o
+7.Algorithm/3.BinaryTree/1.Build.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/3.BinaryTree/1.Build.cpp.o
+.PHONY : 7.Algorithm/3.BinaryTree/1.Build.cpp.o
 
-7.Algorithm/2.Sort/7.HeapSort.i: 7.Algorithm/2.Sort/7.HeapSort.cpp.i
+7.Algorithm/3.BinaryTree/1.Build.i: 7.Algorithm/3.BinaryTree/1.Build.cpp.i
 
-.PHONY : 7.Algorithm/2.Sort/7.HeapSort.i
+.PHONY : 7.Algorithm/3.BinaryTree/1.Build.i
 
 # target to preprocess a source file
-7.Algorithm/2.Sort/7.HeapSort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/2.Sort/7.HeapSort.cpp.i
-.PHONY : 7.Algorithm/2.Sort/7.HeapSort.cpp.i
+7.Algorithm/3.BinaryTree/1.Build.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/3.BinaryTree/1.Build.cpp.i
+.PHONY : 7.Algorithm/3.BinaryTree/1.Build.cpp.i
 
-7.Algorithm/2.Sort/7.HeapSort.s: 7.Algorithm/2.Sort/7.HeapSort.cpp.s
+7.Algorithm/3.BinaryTree/1.Build.s: 7.Algorithm/3.BinaryTree/1.Build.cpp.s
 
-.PHONY : 7.Algorithm/2.Sort/7.HeapSort.s
+.PHONY : 7.Algorithm/3.BinaryTree/1.Build.s
 
 # target to generate assembly for a file
-7.Algorithm/2.Sort/7.HeapSort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/2.Sort/7.HeapSort.cpp.s
-.PHONY : 7.Algorithm/2.Sort/7.HeapSort.cpp.s
+7.Algorithm/3.BinaryTree/1.Build.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Algorithm.dir/build.make CMakeFiles/Algorithm.dir/7.Algorithm/3.BinaryTree/1.Build.cpp.s
+.PHONY : 7.Algorithm/3.BinaryTree/1.Build.cpp.s
 
 test.o: test.cpp.o
 
@@ -484,9 +484,9 @@ help:
 	@echo "... 6.Linux系统编程/2.文件系统/8.glob.o"
 	@echo "... 6.Linux系统编程/2.文件系统/8.glob.i"
 	@echo "... 6.Linux系统编程/2.文件系统/8.glob.s"
-	@echo "... 7.Algorithm/2.Sort/7.HeapSort.o"
-	@echo "... 7.Algorithm/2.Sort/7.HeapSort.i"
-	@echo "... 7.Algorithm/2.Sort/7.HeapSort.s"
+	@echo "... 7.Algorithm/3.BinaryTree/1.Build.o"
+	@echo "... 7.Algorithm/3.BinaryTree/1.Build.i"
+	@echo "... 7.Algorithm/3.BinaryTree/1.Build.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
