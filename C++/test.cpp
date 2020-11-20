@@ -52,13 +52,10 @@ bool validMountainArray(vector<int>& A)
 
 int main()
 {
-    vector<int> v1{1, 2, 2, 4};
-    vector<int> v2;
-    v2 = findErrorNums(v1);
-    for(auto i:v2)
-    {
-        cout << i << " ";
-    }
+    char str[]="hello";
+    cout << sizeof(str) << endl;
+    cout << strlen(str);
+
 
     return 0;
 }
