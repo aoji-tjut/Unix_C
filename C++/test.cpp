@@ -26,36 +26,11 @@
 #include <tuple>
 using namespace std;
 
-bool validMountainArray(vector<int>& A)
-{
-    int size = A.size();
-    int l = 0;
-    int r = size - 1;
-
-    while(l + 1 < size && A[l] < A[l + 1])
-    {
-        l++;
-    }
-
-    while(r > 0 && A[r - 1] > A[r])
-    {
-        r--;
-    }
-
-    if((l > 0) && (r < size - 1) && (l == r))
-    {
-        return true;
-    }
-
-    return false;
-}
-
 int main()
 {
-    char str[]="hello";
+    char str[] = "hello";
     cout << sizeof(str) << endl;
     cout << strlen(str);
-
 
     return 0;
 }
