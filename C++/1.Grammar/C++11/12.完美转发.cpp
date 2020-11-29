@@ -25,6 +25,8 @@ void PerfectForward(int&& i)
 
 int main()
 {
+    //完美转发：可以写一个接受任意实参的函数模板 并转发到其它函数 目标函数会收到与转发函数完全相同的实参
+
     int i = 10;
     cout << "\t\t\t\t\t" << &i << " " << i << endl;
     UnPerfectForward(std::move(i));
