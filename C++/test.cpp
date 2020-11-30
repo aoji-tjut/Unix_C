@@ -30,7 +30,11 @@ int main()
 {
     char str[] = "hello";
     cout << sizeof(str) << endl;
-    cout << strlen(str);
+    cout << strlen(str) << endl;
+
+    const char* s = "hello";
+    cout << sizeof(s) << endl;
+    cout << strlen(s) << endl;
 
     return 0;
 }
