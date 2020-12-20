@@ -26,16 +26,33 @@
 #include <tuple>
 using namespace std;
 
+class A
+{
+private:
+    int x, y;
+
+public:
+    A(int x, int y)
+    {
+        this->x = x;
+        this->y = y;
+    }
+
+    friend int var(A a);
+};
+
+int var(A a)
+{
+    int v = a.x * a.y;
+    return v;
+}
+
 int main()
 {
-    char str[] = "hello";
-    cout << sizeof(str) << endl;
-    cout << strlen(str) << endl;
-
-    const char* s = "hello";
-    cout << sizeof(s) << endl;
-    cout << strlen(s) << endl;
+    int a[2][3] = {1, 2, 3, 4, 5, 6};
+    int* p = *a;
+    int(* q)[3] = a;
+    cout << **(q + 1);
 
     return 0;
 }
-
