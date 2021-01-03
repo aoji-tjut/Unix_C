@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="C++" targetName="Thread" />
+      <config projectName="C++" targetName="Grammar" />
+      <config projectName="C++" targetName="Memory" />
+      <config projectName="C++" targetName="STL" />
+      <config projectName="C++" targetName="test" />
+      <config projectName="C++" targetName="Socket" />
+      <config projectName="C++" targetName="Algorithm" />
+      <config projectName="C++" targetName="Linux" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,7 +18,20 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fab57361-cca7-4d5c-b407-0c3984a99edd" name="Default Changelist" comment="" />
+    <list default="true" id="fab57361-cca7-4d5c-b407-0c3984a99edd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/C++/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/Algorithm" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/Algorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/C++.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/C++.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/CMakeFiles/Algorithm.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C++/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/C++/cmake-build-debug/Makefile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +40,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -31,6 +54,69 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="CMake Application.Algorithm">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Algorithm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="Algorithm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="Algorithm">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Grammar" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="Grammar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="Grammar">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Linux" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="Linux" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="Linux">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Memory" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="Memory" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="Memory">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="STL" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="STL" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="STL">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Socket" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="Socket" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="Socket">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Thread" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="Thread" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="Thread">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="C++" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="C++" RUN_TARGET_NAME="test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.Algorithm" />
+      <item itemvalue="CMake Application.Grammar" />
+      <item itemvalue="CMake Application.Linux" />
+      <item itemvalue="CMake Application.Memory" />
+      <item itemvalue="CMake Application.Socket" />
+      <item itemvalue="CMake Application.STL" />
+      <item itemvalue="CMake Application.test" />
+      <item itemvalue="CMake Application.Thread" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,6 +128,7 @@
       <updated>1602246638312</updated>
       <workItem from="1602246639453" duration="128000" />
       <workItem from="1604240613743" duration="34000" />
+      <workItem from="1609658985621" duration="1082000" />
     </task>
     <servers />
   </component>
@@ -49,9 +136,31 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604240632209">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="215" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609660336792">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1604240632209" />
+    <state x="215" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1609660336792" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1609660451299">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1609660451299" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1609660451298">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1609660451298" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1609660451298">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1609660451297" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1609660451299">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1609660451299" />
+    <state x="262" y="132" key="SettingsEditor" timestamp="1609659964900">
+      <screen x="0" y="23" width="1680" height="977" />
+    </state>
+    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1609659783015" />
+    <state x="262" y="132" key="SettingsEditor/0.23.1680.977@0.23.1680.977" timestamp="1609659964900" />
   </component>
 </project>

@@ -52,7 +52,8 @@ int main()
     int a[2][3] = {1, 2, 3, 4, 5, 6};
     int* p = *a;
     int(* q)[3] = a;
-    cout << **(q + 1);
+    cout << p << endl;
+    cout << q << endl;
 
     return 0;
 }
