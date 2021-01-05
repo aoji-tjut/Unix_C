@@ -54,6 +54,9 @@ int main()
     int(* q)[3] = a;
     cout << p << endl;
     cout << q << endl;
+    cout << sizeof(a) << endl;
+    cout << sizeof(p) << endl;
+    cout << sizeof(q) << endl;
 
     return 0;
 }
