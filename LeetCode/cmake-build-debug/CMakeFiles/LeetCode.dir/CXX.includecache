@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/aoji/Documents/Unix_C/LeetCode/2.Candy_Hard.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+numeric
+-
+
