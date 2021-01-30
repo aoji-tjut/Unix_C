@@ -20,6 +20,12 @@ fg/bg [任务号]
 守护进程(关闭终端进程不终止)：
 nohup [运行命令]
 
+会话模式(关闭终端进程不终止)：
+screen		进入会话模式
+ctrl+ad		退出会话模式
+screen -ls	查看会话
+screen -r [id]	恢复会话
+
 开机启动进程：
 在/etc/rc.local添加命令
 
