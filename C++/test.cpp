@@ -26,25 +26,10 @@
 #include <tuple>
 using namespace std;
 
-class A
+void fun(int* p, int i)
 {
-private:
-    int x, y;
-
-public:
-    A(int x, int y)
-    {
-        this->x = x;
-        this->y = y;
-    }
-
-    friend int var(A a);
-};
-
-int var(A a)
-{
-    int v = a.x * a.y;
-    return v;
+    p = (decltype(p)) malloc(sizeof(int));
+    *p = i;
 }
 
 int main()
@@ -52,11 +37,18 @@ int main()
     int a[2][3] = {1, 2, 3, 4, 5, 6};
     int* p = *a;
     int(* q)[3] = a;
+    cout << a << endl;
     cout << p << endl;
     cout << q << endl;
     cout << sizeof(a) << endl;
     cout << sizeof(p) << endl;
     cout << sizeof(q) << endl;
+    cout << "---------------------------" << endl;
+
+    int* pp = nullptr;
+    fun(pp, 100);
+    cout << *pp << endl;
+    free(pp);
 
     return 0;
 }
