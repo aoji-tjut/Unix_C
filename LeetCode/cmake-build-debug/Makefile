@@ -143,32 +143,32 @@ LeetCode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/build
 .PHONY : LeetCode/fast
 
-2.Candy_Hard.o: 2.Candy_Hard.cpp.o
+test.o: test.cpp.o
 
-.PHONY : 2.Candy_Hard.o
+.PHONY : test.o
 
 # target to build an object file
-2.Candy_Hard.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/2.Candy_Hard.cpp.o
-.PHONY : 2.Candy_Hard.cpp.o
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/test.cpp.o
+.PHONY : test.cpp.o
 
-2.Candy_Hard.i: 2.Candy_Hard.cpp.i
+test.i: test.cpp.i
 
-.PHONY : 2.Candy_Hard.i
+.PHONY : test.i
 
 # target to preprocess a source file
-2.Candy_Hard.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/2.Candy_Hard.cpp.i
-.PHONY : 2.Candy_Hard.cpp.i
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/test.cpp.i
+.PHONY : test.cpp.i
 
-2.Candy_Hard.s: 2.Candy_Hard.cpp.s
+test.s: test.cpp.s
 
-.PHONY : 2.Candy_Hard.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-2.Candy_Hard.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/2.Candy_Hard.cpp.s
-.PHONY : 2.Candy_Hard.cpp.s
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LeetCode.dir/build.make CMakeFiles/LeetCode.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -179,9 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LeetCode"
-	@echo "... 2.Candy_Hard.o"
-	@echo "... 2.Candy_Hard.i"
-	@echo "... 2.Candy_Hard.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 
