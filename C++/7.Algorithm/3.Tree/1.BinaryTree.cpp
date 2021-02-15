@@ -21,7 +21,7 @@ void BuildTree(Tree& T)
     }
     else
     {
-        T = new Node();
+        T = new Node;
         if(!T)
         {
             cout << "Overflow" << endl;
