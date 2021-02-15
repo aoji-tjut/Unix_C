@@ -36,7 +36,7 @@ void BuildTree(Tree& T)
 
 void Visit(char c)
 {
-    cout << c << "";
+    cout << c;
 }
 
 void PreOrder(Tree T)
