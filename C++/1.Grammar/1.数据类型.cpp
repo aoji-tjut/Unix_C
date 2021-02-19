@@ -24,6 +24,15 @@ int main()
     //指针
     cout << "int*\t\t" << sizeof(int*) << endl;                 //任何指针 32位4字节 64位8字节
 
+    //常量
+    //执行对象拷贝时有限制 常量的底层const不能赋值给非常量的底层const
+    //使用命名的强制类型转换函数const_cast时 只能改变运算对象的底层const
+    const int i = 0;                //值不能变 顶层const
+    int* const q = nullptr;         //指针常量 指向不能变 顶层const
+    const int* p = nullptr;         //常量指针 指向的值不能变 底层const
+    const int* const r = nullptr;   //常量指针常量 指向的值和指向都不能变 第一个底层第二个顶层
+
+
     //数组
     int a[10];
     cout << "a[10]\t\t" << sizeof(a) << endl;                   //4*10字节
