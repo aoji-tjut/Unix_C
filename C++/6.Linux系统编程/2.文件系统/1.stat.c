@@ -17,6 +17,9 @@ int main(int argc, char* argv[])
         perror("stat error");
         exit(-1);
     }
+    //stat通过文件路径获取文件属性 面对符号链接文件：获取所指向的目标文件的文件属性
+    //fstat通过文件描述符获取文件属性
+    //lstat通过文件路径获取文件属性 面对符号链接文件：获取符号链接文件的文件属性
 
     printf("设备号：%d\n", st.st_dev);
     printf("模式：%hu\n", st.st_mode);

@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/1.Grammar/5.new.cpp
+/Users/aoji/Documents/Unix_C/C++/1.Grammar/43.智能指针.cpp
 iostream
+-
+memory
 -
 

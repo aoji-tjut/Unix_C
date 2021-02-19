@@ -70,7 +70,8 @@ void Capacity()
     if(v.empty())
     {
         cout << "容器为空" << endl;
-    } else
+    }
+    else
     {
         cout << "容器总容量：" << v.capacity() << endl;
         cout << "容器已用大小：" << v.size() << endl;

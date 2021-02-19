@@ -16,6 +16,9 @@ class B
 {
 public:
     //声明explicit避免隐式调用构造函数
+    //explicit关键字只能用于类内部的构造函数声明上
+    //explicit关键字作用于单个参数的构造函数
+    //被explicit修饰的构造函数的类 不能发生相应的隐式类型转换
     explicit B(int i)
     {
         this->i = i;

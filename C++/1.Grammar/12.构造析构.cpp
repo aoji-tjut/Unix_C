@@ -4,14 +4,14 @@ using namespace std;
 class Student
 {
 public:
-    //构造函数 无返回值 可以有参数 可重载
+    //构造函数 无返回值 可以有参数 可重载 不可以是虚函数或纯虚函数
     Student()
     {
         cout << "构造函数" << endl;
         this->age = 20;
     }
 
-    //析构函数 无返回值 无参数 不可重载
+    //析构函数 无返回值 无参数 不可重载 可以是虚函数或纯虚函数
     ~Student()
     {
         cout << "析构函数" << endl;

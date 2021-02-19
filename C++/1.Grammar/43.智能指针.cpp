@@ -34,7 +34,7 @@ void UniquePtr()
     cout << q << " " << q->a << endl;
     cout << endl;
 
-    q = make_unique<A>(20);         //重新构造q 析构之前的q
+    q = make_unique<A>(20);         //先重新构造q 后析构之前的q
     cout << q << " " << q->a << endl;
     cout << endl;
 }
@@ -60,7 +60,14 @@ void SharedPtr()
 
 int main()
 {
+    //智能指针就是一个类 当超出了类的作用域时 类会自动调用析构函数 析构函数会自动释放资源
+
+    //unique_ptr实现独占式拥有或严格拥有概念 保证同一时间内只有一个智能指针可以指向该对象
     UniquePtr();
+    cout << "------------------------------------------" << endl;
+    cout << endl;
+
+    //shared_ptr实现共享式拥有概念 多个智能指针可以指向相同对象 该对象和其相关资源会在"最后一个引用被销毁"时候释放
     SharedPtr();
 
     return 0;
