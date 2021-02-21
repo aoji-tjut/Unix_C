@@ -151,7 +151,9 @@ add_executable(Socket 5.Socket/1.TCP服务器.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/5.remove.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/6.mkdir、rmdir.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/7.getcwd、chdir.c)
-add_executable(Linux 6.Linux系统编程/2.文件系统/8.glob.c)
+#add_executable(Linux 6.Linux系统编程/3.目录和用户操作/1.glob.c)
+#add_executable(Linux 6.Linux系统编程/3.目录和用户操作/2.dir.c)
+add_executable(Linux 6.Linux系统编程/3.目录和用户操作/3.du.c)
 
 
 #add_executable(Algorithm 7.Algorithm/1.Search/1.SequentialSearch.cpp)
