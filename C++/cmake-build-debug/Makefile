@@ -369,32 +369,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Socket.dir/build.make CMakeFiles/Socket.dir/5.Socket/1.TCP服务器.c.s
 .PHONY : 5.Socket/1.TCP服务器.c.s
 
-6.Linux系统编程/3.目录和用户操作/3.du.o: 6.Linux系统编程/3.目录和用户操作/3.du.c.o
+6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.o: 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.o
 
-.PHONY : 6.Linux系统编程/3.目录和用户操作/3.du.o
+.PHONY : 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.o
 
 # target to build an object file
-6.Linux系统编程/3.目录和用户操作/3.du.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/3.du.c.o
-.PHONY : 6.Linux系统编程/3.目录和用户操作/3.du.c.o
+6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.o
+.PHONY : 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.o
 
-6.Linux系统编程/3.目录和用户操作/3.du.i: 6.Linux系统编程/3.目录和用户操作/3.du.c.i
+6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.i: 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.i
 
-.PHONY : 6.Linux系统编程/3.目录和用户操作/3.du.i
+.PHONY : 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.i
 
 # target to preprocess a source file
-6.Linux系统编程/3.目录和用户操作/3.du.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/3.du.c.i
-.PHONY : 6.Linux系统编程/3.目录和用户操作/3.du.c.i
+6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.i
+.PHONY : 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.i
 
-6.Linux系统编程/3.目录和用户操作/3.du.s: 6.Linux系统编程/3.目录和用户操作/3.du.c.s
+6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.s: 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.s
 
-.PHONY : 6.Linux系统编程/3.目录和用户操作/3.du.s
+.PHONY : 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.s
 
 # target to generate assembly for a file
-6.Linux系统编程/3.目录和用户操作/3.du.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/3.du.c.s
-.PHONY : 6.Linux系统编程/3.目录和用户操作/3.du.c.s
+6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.s
+.PHONY : 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.s
 
 7.Algorithm/3.Tree/2.BalancedBinaryTree.o: 7.Algorithm/3.Tree/2.BalancedBinaryTree.cpp.o
 
@@ -481,9 +481,9 @@ help:
 	@echo "... 5.Socket/1.TCP服务器.o"
 	@echo "... 5.Socket/1.TCP服务器.i"
 	@echo "... 5.Socket/1.TCP服务器.s"
-	@echo "... 6.Linux系统编程/3.目录和用户操作/3.du.o"
-	@echo "... 6.Linux系统编程/3.目录和用户操作/3.du.i"
-	@echo "... 6.Linux系统编程/3.目录和用户操作/3.du.s"
+	@echo "... 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.o"
+	@echo "... 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.i"
+	@echo "... 6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.s"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.o"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.i"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.s"

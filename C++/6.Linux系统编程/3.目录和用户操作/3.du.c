@@ -3,7 +3,6 @@
 #include <string.h>
 #include <sys/stat.h>
 #include <glob.h>
-#include <dirent.h>
 
 int NoLoop(const char* path)
 {
