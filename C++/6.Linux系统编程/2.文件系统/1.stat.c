@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
     printf("块大小：%d\n", st.st_blksize);
     printf("最后访问时间：%ld\n", st.st_atimespec.tv_sec);
     printf("最后修改时间：%ld\n", st.st_mtimespec.tv_sec);
-    printf("状态最后修改时间：%ld\n", st.st_ctimespec.tv_sec);
+    printf("最后状态修改时间：%ld\n", st.st_ctimespec.tv_sec);
 
     if(S_ISREG(st.st_mode))
     {
