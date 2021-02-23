@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/6.getpass、crypt.c.o"
+  "/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/3.目录和用户操作/7.time、gmtime、localtime、strftime.c" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/7.time、gmtime、localtime、strftime.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
