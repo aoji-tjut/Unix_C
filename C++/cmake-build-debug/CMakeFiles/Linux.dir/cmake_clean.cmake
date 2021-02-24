@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/7.time、gmtime、localtime、strftime.c.o"
+  "CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/7.time、gmtime、localtime、strftime、mktime.c.o"
   "Linux"
   "Linux.pdb"
 )

@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/7.time、gmtime、localtime、strftime.c.o  -o Linux 
+/Library/Developer/CommandLineTools/usr/bin/cc -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Linux.dir/6.Linux系统编程/3.目录和用户操作/7.time、gmtime、localtime、strftime、mktime.c.o  -o Linux 
