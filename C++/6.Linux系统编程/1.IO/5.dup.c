@@ -3,13 +3,11 @@
 #include <unistd.h>
 #include <fcntl.h>
 
+//0->stdin 1->stdout 2->stderr
+
 //终端运行 传入文件名、写入文件的内容...
 int main(int argc, char* argv[])
 {
-    /*
-     * 0->stdin 1->stdout 2->stderr
-     */
-
     if(argc < 2)
     {
         perror("argc error");

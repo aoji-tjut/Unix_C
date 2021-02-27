@@ -3,11 +3,9 @@
 #include <stdlib.h>
 #include <fcntl.h>
 
-/*
- * 文件描述符是存储文件指针的数组的下标 0->stdin 1->stdout 2->stderr
- * fileno() 文件指针->文件描述符 即标准IO->系统IO
- * fdopen() 文件描述符->文件指针 即系统IO->标准IO
- */
+//文件描述符是存储文件指针的数组的下标 0->stdin 1->stdout 2->stderr
+//fileno() 文件指针->文件描述符 即标准IO->系统IO
+//fdopen() 文件描述符->文件指针 即系统IO->标准IO
 
 //终端运行 传入源文件、目标文件
 int main(int argc, char* argv[])
