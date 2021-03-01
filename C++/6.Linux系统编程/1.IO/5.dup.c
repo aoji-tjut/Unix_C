@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 
     //非原子操作
 //    close(1);   //关闭stdout文件描述符 下标1为空
-//    dup(fd);    //复制一份fd到当前可用最小下标：1
+//    dup(fd);    //复制一份fd到当前可用最小下标：1 并返回复制后的文件描述符
 //    close(fd);  //关闭fd文件描述符 下标3为空
 //    for(int i = 2; i < argc; i++)
 //    {
