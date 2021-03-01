@@ -6,11 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/3.进程/2.fork.c
+/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/3.进程/4.exec.c
 stdio.h
 -
 stdlib.h
 -
 unistd.h
+-
+sys/wait.h
 -
 

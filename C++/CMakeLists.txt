@@ -162,7 +162,9 @@ add_executable(Socket 5.Socket/1.TCP服务器.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/16.getopt.c)
 #add_executable(Linux 6.Linux系统编程/2.文件系统/17.setjmp、longjmp.c)
 #add_executable(Linux 6.Linux系统编程/3.进程/1.getpid、getppid.c)
-add_executable(Linux 6.Linux系统编程/3.进程/2.fork.c)
+#add_executable(Linux 6.Linux系统编程/3.进程/2.fork.c)
+#add_executable(Linux 6.Linux系统编程/3.进程/3.wait.c)
+add_executable(Linux 6.Linux系统编程/3.进程/4.exec.c)
 
 
 #add_executable(Algorithm 7.Algorithm/1.Search/1.SequentialSearch.cpp)
