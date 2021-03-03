@@ -9,8 +9,8 @@ int main()
     pid_t pid = getpid();   //进程id
     pid_t ppid = getppid(); //父进程id
 
-    printf("%d\n", pid);
-    printf("%d\n", ppid);
+    printf("pid = %d\n", pid);
+    printf("ppid = %d\n", ppid);
 
     getchar();
     return 0;
