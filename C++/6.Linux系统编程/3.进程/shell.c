@@ -74,7 +74,6 @@ int main()
             //子进程
             if(pid == 0)
             {
-
                 execvp(cmd.glob_res.gl_pathv[0], cmd.glob_res.gl_pathv);
                 perror("execvp");
                 exit(-1);
