@@ -4,6 +4,7 @@
 #include <sys/wait.h>
 
 //exec用于执行一个进程 执行exec后切换到新的进程映像 并不创建新的进程 pid不变 成功不返回 失败返回-1
+//system函数执行原理：execl("/bin/sh", "sh", "-c", "......", NULL)
 
 int main()
 {
