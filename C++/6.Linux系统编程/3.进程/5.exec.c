@@ -26,7 +26,7 @@ int main()
         exit(-1);
     }
 
-    wait(NULL);//父进程等待子进程结束
+    wait(NULL);
 
     puts("End");
 
