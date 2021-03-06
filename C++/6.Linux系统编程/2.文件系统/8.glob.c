@@ -12,7 +12,7 @@ int ErrFunc(const char* epath, int eerrno)
     return 0;
 }
 
-int main(int argc, char* argv[])
+int main()
 {
     printf("输入目录+通配符\n");
     char path[BUFSIZ];  //目录+通配符

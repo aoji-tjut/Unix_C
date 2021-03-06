@@ -51,7 +51,7 @@ void A()
     printf("%s():End\n", __FUNCTION__);
 }
 
-int main(int argc, char* argv[])
+int main()
 {
     printf("%s():Begin\n", __FUNCTION__);
     printf("%s():Call A\n", __FUNCTION__);

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 
-int main(int argc, char* argv[])
+int main()
 {
     time_t t;
     time(&t);   //获取时间戳

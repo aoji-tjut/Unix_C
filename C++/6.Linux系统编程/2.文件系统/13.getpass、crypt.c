@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 //终端运行
-int main(int argc, char* argv[])
+int main()
 {
     char* str = getpass("Enter string:");
     char* password = crypt(str, "hello world!");

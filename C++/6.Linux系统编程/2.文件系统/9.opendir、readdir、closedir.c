@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <dirent.h>
 
-int main(int argc, char* argv[])
+int main()
 {
     printf("输入目录\n");
     char path[BUFSIZ];  //目录

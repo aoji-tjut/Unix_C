@@ -28,7 +28,7 @@ void Fun3()
     puts("Fun3");
 }
 
-int main(int argc, char* argv[])
+int main()
 {
     puts("Begin");
 
