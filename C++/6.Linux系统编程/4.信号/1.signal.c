@@ -19,7 +19,6 @@ void fun()
 //终端运行
 int main()
 {
-    //signal(SIGINT, SIG_IGN);    //对中断信号ctrl+c进行忽略操作
     signal(SIGINT, fun);    //对中断信号ctrl+c进行fun操作
 
     for(int i = 0; i < 10; i++)
