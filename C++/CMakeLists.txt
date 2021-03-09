@@ -167,7 +167,9 @@ add_executable(Socket 5.Socket/1.TCP服务器.c)
 #add_executable(Linux 6.Linux系统编程/3.进程/4.exec.c)
 #add_executable(Linux 6.Linux系统编程/3.进程/shell.c)
 #add_executable(Linux 6.Linux系统编程/4.信号/1.signal.c)
-add_executable(Linux 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c)
+#add_executable(Linux 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause、abort.c)
+#add_executable(Linux 6.Linux系统编程/4.信号/3.setitimer.c)
+add_executable(Linux 6.Linux系统编程/4.信号/4.sigset.c)
 
 
 #add_executable(Algorithm 7.Algorithm/1.Search/1.SequentialSearch.cpp)

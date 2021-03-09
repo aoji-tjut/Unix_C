@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c
+/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/4.信号/4.sigset.c
 stdio.h
 -
 unistd.h

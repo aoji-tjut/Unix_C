@@ -11,42 +11,42 @@
 
 void KillSignal()
 {
-	puts("Kill Signal");
+    puts("Kill Signal");
 }
 
 void RaiseSignal()
 {
-	puts("Raise Signal");
+    puts("Raise Signal");
 }
 
 void AlarmSignal()
 {
-	puts("Alarm Signal");
+    puts("Alarm Signal");
 }
 
 void AbortSignal()
 {
-	puts("Abort Signal");
+    puts("Abort Signal");
 }
 
 int main()
 {
-	signal(1, KillSignal);
-	signal(4, RaiseSignal);
-	signal(SIGALRM, AlarmSignal);
-	signal(SIGABRT, AbortSignal);
+    signal(1, KillSignal);
+    signal(4, RaiseSignal);
+    signal(SIGALRM, AlarmSignal);
+    signal(SIGABRT, AbortSignal);
 
-	kill(getpid(), 1);
-	raise(4);
-	
-	for(int i = 0; i < 5; i++)
-	{
-		puts("-----");
-		alarm(1);//设置1秒闹钟信号
-		pause();//等待信号
-	}
+    kill(getpid(), 1);
+    raise(4);
 
-	abort();
-	
-	return 0;
+    for(int i = 0; i < 5; i++)
+    {
+        puts("-----");
+        alarm(1);   //设置1秒闹钟信号
+        pause();    //等待信号
+    }
+
+    abort();
+
+    return 0;
 }

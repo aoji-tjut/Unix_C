@@ -369,32 +369,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Socket.dir/build.make CMakeFiles/Socket.dir/5.Socket/1.TCP服务器.c.s
 .PHONY : 5.Socket/1.TCP服务器.c.s
 
-6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.o: 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.o
+6.Linux系统编程/4.信号/4.sigset.o: 6.Linux系统编程/4.信号/4.sigset.c.o
 
-.PHONY : 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.o
+.PHONY : 6.Linux系统编程/4.信号/4.sigset.o
 
 # target to build an object file
-6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.o
-.PHONY : 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.o
+6.Linux系统编程/4.信号/4.sigset.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/4.信号/4.sigset.c.o
+.PHONY : 6.Linux系统编程/4.信号/4.sigset.c.o
 
-6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.i: 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.i
+6.Linux系统编程/4.信号/4.sigset.i: 6.Linux系统编程/4.信号/4.sigset.c.i
 
-.PHONY : 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.i
+.PHONY : 6.Linux系统编程/4.信号/4.sigset.i
 
 # target to preprocess a source file
-6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.i
-.PHONY : 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.i
+6.Linux系统编程/4.信号/4.sigset.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/4.信号/4.sigset.c.i
+.PHONY : 6.Linux系统编程/4.信号/4.sigset.c.i
 
-6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.s: 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.s
+6.Linux系统编程/4.信号/4.sigset.s: 6.Linux系统编程/4.信号/4.sigset.c.s
 
-.PHONY : 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.s
+.PHONY : 6.Linux系统编程/4.信号/4.sigset.s
 
 # target to generate assembly for a file
-6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.s
-.PHONY : 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.s
+6.Linux系统编程/4.信号/4.sigset.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/4.信号/4.sigset.c.s
+.PHONY : 6.Linux系统编程/4.信号/4.sigset.c.s
 
 7.Algorithm/3.Tree/2.BalancedBinaryTree.o: 7.Algorithm/3.Tree/2.BalancedBinaryTree.cpp.o
 
@@ -481,9 +481,9 @@ help:
 	@echo "... 5.Socket/1.TCP服务器.o"
 	@echo "... 5.Socket/1.TCP服务器.i"
 	@echo "... 5.Socket/1.TCP服务器.s"
-	@echo "... 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.o"
-	@echo "... 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.i"
-	@echo "... 6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.s"
+	@echo "... 6.Linux系统编程/4.信号/4.sigset.o"
+	@echo "... 6.Linux系统编程/4.信号/4.sigset.i"
+	@echo "... 6.Linux系统编程/4.信号/4.sigset.s"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.o"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.i"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.s"

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Linux.dir/6.Linux系统编程/4.信号/2.kill、raise、alarm、pause.c.o"
+  "/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/4.信号/4.sigset.c" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Linux.dir/6.Linux系统编程/4.信号/4.sigset.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

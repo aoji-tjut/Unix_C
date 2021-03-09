@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 #include <signal.h>
 
@@ -14,19 +13,19 @@
 
 void fun()
 {
-	puts("|");
+    puts("|");
 }
 
 //终端运行
 int main()
 {
-	signal(SIGINT, fun);//对中断信号ctrl+c进行fun操作
-	
-	for(int i = 0; i < 10; i++)
-	{
-		puts("-");
-		sleep(1);
-	}
+    signal(SIGINT, fun);    //对中断信号ctrl+c进行fun操作
 
-	return 0;
+    for(int i = 0; i < 10; i++)
+    {
+        puts("-");
+        sleep(1);
+    }
+
+    return 0;
 }
