@@ -3,14 +3,14 @@
 #include <signal.h>
 #include <sys/time.h>
 
-void AlarmSignal()
+void DealSignal()
 {
     puts("Alarm Signal");
 }
 
 int main()
 {
-    signal(SIGALRM, AlarmSignal);
+    signal(SIGALRM, DealSignal);
 
     struct itimerval itv;
 
