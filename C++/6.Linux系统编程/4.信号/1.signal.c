@@ -19,7 +19,7 @@ void fun()
 //终端运行
 int main()
 {
-    signal(SIGINT, fun);    //对中断信号ctrl+c进行fun操作
+    signal(SIGINT, fun);    //对中断信号ctrl+c进行fun操作 signal是可重入的
 
     for(int i = 0; i < 10; i++)
     {
