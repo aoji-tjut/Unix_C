@@ -2,8 +2,6 @@
 #include <unistd.h>
 #include <signal.h>
 
-//若要跳出信号处理函数 应使用sigsetjmp和siglongjmp 可以保留mask信号掩码信息
-
 void DealSignal()
 {
     printf("|");
