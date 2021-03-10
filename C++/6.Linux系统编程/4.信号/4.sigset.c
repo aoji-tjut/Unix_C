@@ -12,8 +12,8 @@ int main()
 {
     signal(SIGINT, DealSignal);
 
-    sigset_t set, old_set;  //信号集
-    sigemptyset(&set);  //置空信号集
+    sigset_t set, old_set;      //信号集
+    sigemptyset(&set);          //置空信号集
     sigaddset(&set, SIGINT);    //将SIGINT信号添加至信号集
     
     sigprocmask(SIG_UNBLOCK, &set, &old_set);   //将set信号集解除阻塞 保留之前状态至old_set

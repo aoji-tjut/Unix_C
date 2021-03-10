@@ -9,35 +9,34 @@
 //int pause() 阻塞进程 等待被一个信号打断
 //void abort() 给当前进程发送SIGABRT信号
 
-void KillSignal()
+void DealSignal(int s)
 {
-    puts("Kill Signal");
-}
-
-void RaiseSignal()
-{
-    puts("Raise Signal");
-}
-
-void AlarmSignal()
-{
-    puts("Alarm Signal");
-}
-
-void AbortSignal()
-{
-    puts("Abort Signal");
+    switch(s)
+    {
+        case 1:
+            puts("Kill Signal");
+            break;
+        case 2:
+            puts("Raise Signal");
+            break;
+        case SIGALRM:
+            puts("Alarm Signal");
+            break;
+        case SIGABRT:
+            puts("Abort Signal");
+            break;
+    }
 }
 
 int main()
 {
-    signal(1, KillSignal);
-    signal(4, RaiseSignal);
-    signal(SIGALRM, AlarmSignal);
-    signal(SIGABRT, AbortSignal);
+    signal(1, DealSignal);
+    signal(2, DealSignal);
+    signal(SIGALRM, DealSignal);
+    signal(SIGABRT, DealSignal);
 
     kill(getpid(), 1);
-    raise(4);
+    raise(2);
 
     for(int i = 0; i < 5; i++)
     {
