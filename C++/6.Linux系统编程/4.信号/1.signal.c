@@ -13,7 +13,7 @@
 //typedef void (*sighandler_t)(int);
 //sighandler_t signal(int signum, sighandler_t handler) = void (*signal(int signum, void (*pfun)(int)))(int)
 
-void fun()
+void DealSignal()
 {
     puts("|");
 }
@@ -21,7 +21,7 @@ void fun()
 //终端运行
 int main()
 {
-    signal(SIGINT, fun);    //对中断信号ctrl+c进行fun操作 signal是可重入的
+    signal(SIGINT, DealSignal);//对中断信号ctrl+c进行DealSignal操作 signal是可重入的
 
     for(int i = 0; i < 10; i++)
     {
