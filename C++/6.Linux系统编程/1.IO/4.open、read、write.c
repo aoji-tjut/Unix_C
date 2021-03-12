@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
         exit(-1);
     }
 
-    dst_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);   //只写打开 无则创建 有则清空 755权限
+    dst_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);   //只写打开 无则创建 有则清空 644权限
     if(dst_fd < 0)
     {
         close(src_fd);
