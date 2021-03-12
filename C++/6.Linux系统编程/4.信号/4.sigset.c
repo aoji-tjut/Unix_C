@@ -12,11 +12,11 @@ int main()
 {
     signal(SIGINT, DealSignal);
 
-    sigset_t set, old_set;      //信号集
+    sigset_t set, save_set;     //信号集
     sigemptyset(&set);          //置空信号集
     sigaddset(&set, SIGINT);    //将SIGINT信号添加至信号集
-    
-    sigprocmask(SIG_UNBLOCK, &set, &old_set);   //将set信号集解除阻塞 保留之前状态至old_set
+
+    sigprocmask(SIG_UNBLOCK, &set, &save_set);  //将set信号集解除阻塞 保留之前状态至save_set
 
     for(int i = 0; i < 5; i++)
     {
@@ -34,7 +34,7 @@ int main()
         sigprocmask(SIG_UNBLOCK, &set, NULL);   //解除阻塞信号集
     }
 
-    sigprocmask(SIG_SETMASK, &old_set, NULL);   //恢复旧信号集 保证其它模块不受影响
+    sigprocmask(SIG_SETMASK, &save_set, NULL);  //恢复旧信号集 保证其它模块不受影响
 
     return 0;
 }
