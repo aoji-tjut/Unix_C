@@ -6,15 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/1.pthread_create.c
+/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/4.mutex.c
 stdio.h
 -
 stdlib.h
 -
 unistd.h
 -
-pthread.h
+fcntl.h
 -
 string.h
+-
+pthread.h
 -
 
