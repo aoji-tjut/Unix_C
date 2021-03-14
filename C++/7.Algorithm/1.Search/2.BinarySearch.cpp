@@ -5,7 +5,7 @@ using namespace std;
 
 void Sort(vector<int>& v, int n)
 {
-    int change;
+    bool change;
     int temp;
 
     for(int i = 0; i < n - 1; i++)
@@ -21,6 +21,11 @@ void Sort(vector<int>& v, int n)
                 v[j + 1] = temp;
                 change = true;
             }
+        }
+
+        if(!change)
+        {
+            break;
         }
     }
 
