@@ -42,6 +42,8 @@ int main()
     int fd = open("./a", O_RDWR | O_CREAT | O_TRUNC, 0644);
     write(fd, "0\n", sizeof("0"));
     close(fd);
+    
+    pthread_mutex_init(&mutex, NULL);
 
     pthread_mutex_init(&mutex, NULL);
 
