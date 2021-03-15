@@ -7,11 +7,11 @@
 
 #define NUM 1024
 
-//pthread_mutex_init
-//pthread_mutex_destroy
-//pthread_mutex_lock
-//pthread_mutex_trylock
-//pthread_mutex_unlock
+//pthread_mutex_init初始化互斥锁
+//pthread_mutex_destroy销毁互斥锁
+//pthread_mutex_lock阻塞加锁
+//pthread_mutex_trylock非阻塞尝试加锁
+//pthread_mutex_unlock解锁
 
 pthread_mutex_t mutex;
 
