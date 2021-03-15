@@ -35,7 +35,7 @@ int main()
     }
 
     void* retval = NULL;
-    pthread_join(tid, &retval);     //等待线程结束 获取线程返回值 作用同waitpid
+    pthread_join(tid, &retval);     //阻塞等待线程结束 获取线程返回值 作用同waitpid
     printf("Thread return: %d\n", (int) retval);
 
     puts("Main end");
