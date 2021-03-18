@@ -5,9 +5,9 @@
 //线程清理
 //pthread_cleanup_push和pthread_cleanup_pop是宏 必须成对使用 类似钩子函数
 
-void Push(void* val)
+void Push(void* arg)
 {
-    puts(val);
+    puts(arg);
 }
 
 void* Thread()
