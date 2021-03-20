@@ -33,7 +33,8 @@ int main()
     pthread_t tid;
     pthread_create(&tid, NULL, Thread, NULL);
     sleep(3);
-    pthread_cancel(tid);    //线程取消 先取消再收尸
+    pthread_cancel(tid);    //线程取消 需要有取消点 先取消再收尸
+    pthread_join(tid, NULL);
     puts("Thread cancel");
 
     puts("Main end");

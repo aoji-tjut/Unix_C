@@ -10,10 +10,10 @@
 //线程被同一进程中的其他线程取消
 //线程调用pthread_exit函数
 
-void* Thread(void* val)
+void* Thread(void* arg)
 {
     puts("Thread begin");
-    printf("Thread val: %d\n", (int) val);
+    printf("Thread arg: %d\n", (int) arg);
     puts("Thread end");
 
     pthread_exit((void*) 888);
@@ -25,9 +25,9 @@ int main()
 
     int error;
     pthread_t tid;
-    int val = 666;
+    int arg = 666;
 
-    error = pthread_create(&tid, NULL, Thread, (void*) val);    //线程标识 线程属性 线程函数 线程参数
+    error = pthread_create(&tid, NULL, Thread, (void*) arg);    //线程标识 线程属性 线程函数 线程参数
     if(error)
     {
         fprintf(stderr, "pthread_create: %s\n", strerror(error));
@@ -35,7 +35,7 @@ int main()
     }
 
     void* retval = NULL;
-    pthread_join(tid, &retval);     //等待线程结束 获取线程返回值 作用同waitpid
+    pthread_join(tid, &retval);     //阻塞等待线程结束 获取线程返回值 作用同waitpid
     printf("Thread return: %d\n", (int) retval);
 
     puts("Main end");
