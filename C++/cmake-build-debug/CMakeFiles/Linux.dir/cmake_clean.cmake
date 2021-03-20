@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/5.mutex.c.o"
+  "CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/7.sem.c.o"
   "Linux"
   "Linux.pdb"
 )

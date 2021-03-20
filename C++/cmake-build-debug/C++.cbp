@@ -389,7 +389,7 @@
 		<Unit filename="/Users/aoji/Documents/Unix_C/C++/5.Socket/1.TCP服务器.c">
 			<Option target="Socket"/>
 		</Unit>
-		<Unit filename="/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/5.mutex.c">
+		<Unit filename="/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/7.sem.c">
 			<Option target="Linux"/>
 		</Unit>
 		<Unit filename="/Users/aoji/Documents/Unix_C/C++/7.Algorithm/3.Tree/2.BalancedBinaryTree.cpp">

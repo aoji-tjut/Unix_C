@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/5.mutex.c
+/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/7.sem.c
 stdio.h
--
-stdlib.h
 -
 unistd.h
 -
-fcntl.h
--
-string.h
--
 pthread.h
+-
+semaphore.h
 -
 
