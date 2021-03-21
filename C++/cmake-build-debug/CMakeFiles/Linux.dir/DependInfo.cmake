@@ -1,15 +1,15 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/7.sem.c" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/7.sem.c.o"
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/producer_consumer_mutex.cpp" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.o"
   )
-set(CMAKE_C_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # Targets to which this target links.

@@ -6,12 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/producer_consumer_cond.cpp
+/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/producer_consumer_mutex.cpp
 unistd.h
 -
 pthread.h
--
-iostream
 -
 queue
 -

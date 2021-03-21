@@ -369,32 +369,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Socket.dir/build.make CMakeFiles/Socket.dir/5.Socket/1.TCP服务器.c.s
 .PHONY : 5.Socket/1.TCP服务器.c.s
 
-6.Linux系统编程/5.线程/7.sem.o: 6.Linux系统编程/5.线程/7.sem.c.o
+6.Linux系统编程/5.线程/producer_consumer_mutex.o: 6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.o
 
-.PHONY : 6.Linux系统编程/5.线程/7.sem.o
+.PHONY : 6.Linux系统编程/5.线程/producer_consumer_mutex.o
 
 # target to build an object file
-6.Linux系统编程/5.线程/7.sem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/7.sem.c.o
-.PHONY : 6.Linux系统编程/5.线程/7.sem.c.o
+6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.o
+.PHONY : 6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.o
 
-6.Linux系统编程/5.线程/7.sem.i: 6.Linux系统编程/5.线程/7.sem.c.i
+6.Linux系统编程/5.线程/producer_consumer_mutex.i: 6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.i
 
-.PHONY : 6.Linux系统编程/5.线程/7.sem.i
+.PHONY : 6.Linux系统编程/5.线程/producer_consumer_mutex.i
 
 # target to preprocess a source file
-6.Linux系统编程/5.线程/7.sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/7.sem.c.i
-.PHONY : 6.Linux系统编程/5.线程/7.sem.c.i
+6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.i
+.PHONY : 6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.i
 
-6.Linux系统编程/5.线程/7.sem.s: 6.Linux系统编程/5.线程/7.sem.c.s
+6.Linux系统编程/5.线程/producer_consumer_mutex.s: 6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.s
 
-.PHONY : 6.Linux系统编程/5.线程/7.sem.s
+.PHONY : 6.Linux系统编程/5.线程/producer_consumer_mutex.s
 
 # target to generate assembly for a file
-6.Linux系统编程/5.线程/7.sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/7.sem.c.s
-.PHONY : 6.Linux系统编程/5.线程/7.sem.c.s
+6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.s
+.PHONY : 6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.s
 
 7.Algorithm/3.Tree/2.BalancedBinaryTree.o: 7.Algorithm/3.Tree/2.BalancedBinaryTree.cpp.o
 
@@ -481,9 +481,9 @@ help:
 	@echo "... 5.Socket/1.TCP服务器.o"
 	@echo "... 5.Socket/1.TCP服务器.i"
 	@echo "... 5.Socket/1.TCP服务器.s"
-	@echo "... 6.Linux系统编程/5.线程/7.sem.o"
-	@echo "... 6.Linux系统编程/5.线程/7.sem.i"
-	@echo "... 6.Linux系统编程/5.线程/7.sem.s"
+	@echo "... 6.Linux系统编程/5.线程/producer_consumer_mutex.o"
+	@echo "... 6.Linux系统编程/5.线程/producer_consumer_mutex.i"
+	@echo "... 6.Linux系统编程/5.线程/producer_consumer_mutex.s"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.o"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.i"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.s"

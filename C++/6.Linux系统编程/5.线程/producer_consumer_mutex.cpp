@@ -1,33 +1,34 @@
 #include <unistd.h>
 #include <pthread.h>
-#include <iostream>
 #include <queue>
-using namespace std;
+
+#define PNUM 2
+#define CNUM 3
 
 pthread_mutex_t mutex;
-queue<int> q;
+std::queue<int> q;
 
 void* Producer(void* arg)
 {
     int num;
 
-    while(1)
+    while(true)
     {
         pthread_mutex_lock(&::mutex);
         num = rand() % 1000 + 1;
-        cout << "Producer: " << num << endl;
+        printf("Producer%d: %d\n", arg, num);
         q.push(num);
         pthread_mutex_unlock(&::mutex);
 
-        usleep(100000);
+        usleep(500000);
     }
 
     pthread_exit(nullptr);
 }
 
-void* Consumer1(void* arg)
+void* Consumer(void* arg)
 {
-    while(1)
+    while(true)
     {
         pthread_mutex_lock(&::mutex);
         if(q.empty())
@@ -35,51 +36,11 @@ void* Consumer1(void* arg)
             pthread_mutex_unlock(&::mutex);
             continue;
         }
-        cout << "\tConsumer1: " << q.front() << endl;
+        printf("\tConsumer%d: %d\n", arg, q.front());
         q.pop();
         pthread_mutex_unlock(&::mutex);
 
         usleep(1);  //避免优先唤醒
-    }
-
-    pthread_exit(nullptr);
-}
-
-void* Consumer2(void* arg)
-{
-    while(1)
-    {
-        pthread_mutex_lock(&::mutex);
-        if(q.empty())
-        {
-            pthread_mutex_unlock(&::mutex);
-            continue;
-        }
-        cout << "\tConsumer2: " << q.front() << endl;
-        q.pop();
-        pthread_mutex_unlock(&::mutex);
-
-        usleep(1);
-    }
-
-    pthread_exit(nullptr);
-}
-
-void* Consumer3(void* arg)
-{
-    while(1)
-    {
-        pthread_mutex_lock(&::mutex);
-        if(q.empty())
-        {
-            pthread_mutex_unlock(&::mutex);
-            continue;
-        }
-        cout << "\tConsumer3: " << q.front() << endl;
-        q.pop();
-        pthread_mutex_unlock(&::mutex);
-
-        usleep(1);
     }
 
     pthread_exit(nullptr);
@@ -91,16 +52,24 @@ int main()
 
     pthread_mutex_init(&::mutex, nullptr);
 
-    pthread_t p_tid, c_tid1, c_tid2, c_tid3;
-    pthread_create(&p_tid, nullptr, Producer, nullptr);
-    sleep(1);
-    pthread_create(&c_tid1, nullptr, Consumer1, nullptr);
-    pthread_create(&c_tid2, nullptr, Consumer2, nullptr);
-    pthread_create(&c_tid3, nullptr, Consumer3, nullptr);
-    pthread_join(p_tid, nullptr);
-    pthread_join(c_tid1, nullptr);
-    pthread_join(c_tid2, nullptr);
-    pthread_join(c_tid3, nullptr);
+    pthread_t p_tid[PNUM], c_tid[CNUM];
+    for(int i = 0; i < PNUM; i++)
+    {
+        pthread_create(p_tid + i, nullptr, Producer, (void*) (i + 1));
+    }
+    for(int i = 0; i < CNUM; i++)
+    {
+        pthread_create(p_tid + i, nullptr, Consumer, (void*) (i + 1));
+    }
+
+    for(auto i : p_tid)
+    {
+        pthread_join(i, nullptr);
+    }
+    for(auto i : c_tid)
+    {
+        pthread_join(i, nullptr);
+    }
 
     pthread_mutex_destroy(&::mutex);
 

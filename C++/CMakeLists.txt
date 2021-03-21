@@ -179,8 +179,8 @@ add_executable(Socket 5.Socket/1.TCP服务器.c)
 #add_executable(Linux 6.Linux系统编程/5.线程/4.cancel.c)
 #add_executable(Linux 6.Linux系统编程/5.线程/5.mutex.c)
 #add_executable(Linux 6.Linux系统编程/5.线程/6.cond.c)
-add_executable(Linux 6.Linux系统编程/5.线程/7.sem.c)
-#add_executable(Linux 6.Linux系统编程/5.线程/producer_consumer_mutex.cpp)
+#add_executable(Linux 6.Linux系统编程/5.线程/7.sem.c)
+add_executable(Linux 6.Linux系统编程/5.线程/producer_consumer_mutex.cpp)
 #add_executable(Linux 6.Linux系统编程/5.线程/producer_consumer_cond.cpp)
 
 
