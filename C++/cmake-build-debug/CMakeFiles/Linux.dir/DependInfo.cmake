@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/producer_consumer_mutex.cpp" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.o"
+  "/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/producer_consumer_cond.cpp" "/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/producer_consumer_cond.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

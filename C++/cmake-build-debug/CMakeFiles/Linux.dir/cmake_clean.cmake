@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/producer_consumer_mutex.cpp.o"
+  "CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/producer_consumer_cond.cpp.o"
   "Linux"
   "Linux.pdb"
 )

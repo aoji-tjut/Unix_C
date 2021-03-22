@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/7.sem.c
+/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/10.openmp.c
 stdio.h
 -
-unistd.h
+stdlib.h
 -
-pthread.h
--
-semaphore.h
+omp.h
 -
 
