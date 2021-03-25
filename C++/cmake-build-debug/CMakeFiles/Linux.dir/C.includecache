@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/10.openmp.c
+/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/6.高级IO/1.finite_state_machine.c
 stdio.h
 -
 stdlib.h
 -
-omp.h
+unistd.h
+-
+fcntl.h
+-
+errno.h
 -
 
