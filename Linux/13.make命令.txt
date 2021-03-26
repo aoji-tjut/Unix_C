@@ -1,6 +1,2 @@
 make		执行Makefile文件
 make [命令]	执行自定义命令
-
-2个函数：
-src = $(wildcard *.c) 匹配当前目录下所有.c文件 赋值给src
-obj = $(patsubst %.c, %.o, $(src)) 把src中.c文件替换为.o 赋值给obj
