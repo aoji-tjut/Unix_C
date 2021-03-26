@@ -16,6 +16,7 @@ void* Thread1(void* arg)
 {
     while(1)
     {
+        pthread_mutex_lock(&mutex);
         pthread_cond_wait(&cond, &mutex);
         puts("Thread1");
         pthread_mutex_unlock(&mutex);
@@ -28,6 +29,7 @@ void* Thread2(void* arg)
 {
     while(1)
     {
+        pthread_mutex_lock(&mutex);
         pthread_cond_wait(&cond, &mutex);
         puts("Thread2");
         pthread_mutex_unlock(&mutex);
