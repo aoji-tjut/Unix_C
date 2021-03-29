@@ -28,8 +28,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="842cbce7-7b84-4b61-90dd-a427ab21c1d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../C++/6.Linux系统编程/1.IO/read.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/6.Linux系统编程/1.IO/write.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/C++.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/C++.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/动态规划.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616556285915</updated>
       <workItem from="1616556287196" duration="30000" />
+      <workItem from="1616853012144" duration="25000" />
     </task>
     <servers />
   </component>
@@ -79,5 +87,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

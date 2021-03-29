@@ -1,3 +1,5 @@
+#include <cstdio>
+#include <cstdlib>
 #include <unistd.h>
 #include <pthread.h>
 #include <queue>
