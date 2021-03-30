@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Linux.dir/6.Linux系统编程/6.高级IO/6.flock.c.o"
+  "CMakeFiles/Linux.dir/6.Linux系统编程/7.进程间通信/pipe.c.o"
   "Linux"
   "Linux.pdb"
 )

@@ -369,32 +369,32 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Socket.dir/build.make CMakeFiles/Socket.dir/5.Socket/1.TCP服务器.c.s
 .PHONY : 5.Socket/1.TCP服务器.c.s
 
-6.Linux系统编程/6.高级IO/6.flock.o: 6.Linux系统编程/6.高级IO/6.flock.c.o
+6.Linux系统编程/7.进程间通信/pipe.o: 6.Linux系统编程/7.进程间通信/pipe.c.o
 
-.PHONY : 6.Linux系统编程/6.高级IO/6.flock.o
+.PHONY : 6.Linux系统编程/7.进程间通信/pipe.o
 
 # target to build an object file
-6.Linux系统编程/6.高级IO/6.flock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/6.高级IO/6.flock.c.o
-.PHONY : 6.Linux系统编程/6.高级IO/6.flock.c.o
+6.Linux系统编程/7.进程间通信/pipe.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/7.进程间通信/pipe.c.o
+.PHONY : 6.Linux系统编程/7.进程间通信/pipe.c.o
 
-6.Linux系统编程/6.高级IO/6.flock.i: 6.Linux系统编程/6.高级IO/6.flock.c.i
+6.Linux系统编程/7.进程间通信/pipe.i: 6.Linux系统编程/7.进程间通信/pipe.c.i
 
-.PHONY : 6.Linux系统编程/6.高级IO/6.flock.i
+.PHONY : 6.Linux系统编程/7.进程间通信/pipe.i
 
 # target to preprocess a source file
-6.Linux系统编程/6.高级IO/6.flock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/6.高级IO/6.flock.c.i
-.PHONY : 6.Linux系统编程/6.高级IO/6.flock.c.i
+6.Linux系统编程/7.进程间通信/pipe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/7.进程间通信/pipe.c.i
+.PHONY : 6.Linux系统编程/7.进程间通信/pipe.c.i
 
-6.Linux系统编程/6.高级IO/6.flock.s: 6.Linux系统编程/6.高级IO/6.flock.c.s
+6.Linux系统编程/7.进程间通信/pipe.s: 6.Linux系统编程/7.进程间通信/pipe.c.s
 
-.PHONY : 6.Linux系统编程/6.高级IO/6.flock.s
+.PHONY : 6.Linux系统编程/7.进程间通信/pipe.s
 
 # target to generate assembly for a file
-6.Linux系统编程/6.高级IO/6.flock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/6.高级IO/6.flock.c.s
-.PHONY : 6.Linux系统编程/6.高级IO/6.flock.c.s
+6.Linux系统编程/7.进程间通信/pipe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/7.进程间通信/pipe.c.s
+.PHONY : 6.Linux系统编程/7.进程间通信/pipe.c.s
 
 7.Algorithm/3.Tree/2.BalancedBinaryTree.o: 7.Algorithm/3.Tree/2.BalancedBinaryTree.cpp.o
 
@@ -481,9 +481,9 @@ help:
 	@echo "... 5.Socket/1.TCP服务器.o"
 	@echo "... 5.Socket/1.TCP服务器.i"
 	@echo "... 5.Socket/1.TCP服务器.s"
-	@echo "... 6.Linux系统编程/6.高级IO/6.flock.o"
-	@echo "... 6.Linux系统编程/6.高级IO/6.flock.i"
-	@echo "... 6.Linux系统编程/6.高级IO/6.flock.s"
+	@echo "... 6.Linux系统编程/7.进程间通信/pipe.o"
+	@echo "... 6.Linux系统编程/7.进程间通信/pipe.i"
+	@echo "... 6.Linux系统编程/7.进程间通信/pipe.s"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.o"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.i"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.s"
