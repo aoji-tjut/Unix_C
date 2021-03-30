@@ -7,7 +7,7 @@
 #define F1 "/dev/tty11"
 #define F2 "/dev/tty12"
 
-//select以事件为单位组织文件描述符
+//select以事件为单位组织文件描述符 位图形式存储fd
 
 //优点
 //可移植性好
@@ -16,9 +16,10 @@
 //缺点
 //fd数量被限制
 //监视的事件过于单一
-//需要维护一个用来存放大量fd的数据结构 导致用户空间和内核空间在传递该结构时复制开销大
+//fd用户态与内核态复制开销大
 //事件存放位置和结果存放位置一致 select返回后除感兴趣集合之外的集合全部置空 需要重新设置集合
 //对fd进行扫描时是线性扫描 fd剧增后IO效率较低
+//函数返回后需要遍历所有fd 效率低
 
 enum
 {
@@ -118,7 +119,7 @@ void Relay(int fd1, int fd2)
 {
     int fd1_save, fd2_save;
     struct fsm_st fsm12, fsm21;
-    fd_set read_set, write_set;     //文件描述符集合
+    fd_set read_set, write_set;     //文件描述符集合 位图最大1024
 
     //保存旧文件描述符状态 增加非阻塞标志 若没读到数据则设置errno为EAGAIN
     fd1_save = fcntl(fd1, F_GETFL);
