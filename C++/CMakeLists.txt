@@ -191,7 +191,6 @@ add_executable(Socket 5.Socket/1.TCP服务器.c)
 #add_executable(Linux 6.Linux系统编程/6.高级IO/4.epoll.c)
 #add_executable(Linux 6.Linux系统编程/6.高级IO/5.mmap.c)
 #add_executable(Linux 6.Linux系统编程/6.高级IO/6.flock.c)
-add_executable(Linux 6.Linux系统编程/7.进程间通信/pipe.c)
 
 
 #add_executable(Algorithm 7.Algorithm/1.Search/1.SequentialSearch.cpp)

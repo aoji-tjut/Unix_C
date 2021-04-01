@@ -8,7 +8,7 @@
 int main()
 {
     int pipe_fd[2];
-    if(pipe(pipe_fd) < 0)//pipe_fd[0]读 pipe_fd[1]写
+    if(pipe(pipe_fd) < 0)   //pipe_fd[0]读 pipe_fd[1]写
     {
         perror("pipe");
         exit(-1);

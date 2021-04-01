@@ -59,48 +59,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Linux">
-				<Option output="/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Linux" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/aoji/Documents/Unix_C/C++/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 Linux"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Linux/fast">
-				<Option output="/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Linux" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/aoji/Documents/Unix_C/C++/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 Linux/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="Thread">
 				<Option output="/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/Thread" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/aoji/Documents/Unix_C/C++/cmake-build-debug"/>
@@ -388,9 +346,6 @@
 		</Unit>
 		<Unit filename="/Users/aoji/Documents/Unix_C/C++/5.Socket/1.TCP服务器.c">
 			<Option target="Socket"/>
-		</Unit>
-		<Unit filename="/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/7.进程间通信/pipe.c">
-			<Option target="Linux"/>
 		</Unit>
 		<Unit filename="/Users/aoji/Documents/Unix_C/C++/7.Algorithm/3.Tree/2.BalancedBinaryTree.cpp">
 			<Option target="Algorithm"/>
