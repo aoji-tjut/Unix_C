@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/7.进程间通信/pipe.c
+/Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/2.detach.c
 stdio.h
--
-stdlib.h
 -
 unistd.h
 -
-sys/wait.h
+pthread.h
 -
 

@@ -144,6 +144,19 @@ Algorithm/fast:
 .PHONY : Algorithm/fast
 
 #=============================================================================
+# Target rules for targets named Linux
+
+# Build rule for target.
+Linux: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Linux
+.PHONY : Linux
+
+# fast build rule for target.
+Linux/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/build
+.PHONY : Linux/fast
+
+#=============================================================================
 # Target rules for targets named Thread
 
 # Build rule for target.
@@ -356,6 +369,33 @@ Grammar/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Socket.dir/build.make CMakeFiles/Socket.dir/5.Socket/1.TCP服务器.c.s
 .PHONY : 5.Socket/1.TCP服务器.c.s
 
+6.Linux系统编程/5.线程/2.detach.o: 6.Linux系统编程/5.线程/2.detach.c.o
+
+.PHONY : 6.Linux系统编程/5.线程/2.detach.o
+
+# target to build an object file
+6.Linux系统编程/5.线程/2.detach.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.o
+.PHONY : 6.Linux系统编程/5.线程/2.detach.c.o
+
+6.Linux系统编程/5.线程/2.detach.i: 6.Linux系统编程/5.线程/2.detach.c.i
+
+.PHONY : 6.Linux系统编程/5.线程/2.detach.i
+
+# target to preprocess a source file
+6.Linux系统编程/5.线程/2.detach.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.i
+.PHONY : 6.Linux系统编程/5.线程/2.detach.c.i
+
+6.Linux系统编程/5.线程/2.detach.s: 6.Linux系统编程/5.线程/2.detach.c.s
+
+.PHONY : 6.Linux系统编程/5.线程/2.detach.s
+
+# target to generate assembly for a file
+6.Linux系统编程/5.线程/2.detach.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Linux.dir/build.make CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.s
+.PHONY : 6.Linux系统编程/5.线程/2.detach.c.s
+
 7.Algorithm/3.Tree/2.BalancedBinaryTree.o: 7.Algorithm/3.Tree/2.BalancedBinaryTree.cpp.o
 
 .PHONY : 7.Algorithm/3.Tree/2.BalancedBinaryTree.o
@@ -420,6 +460,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Algorithm"
 	@echo "... Grammar"
+	@echo "... Linux"
 	@echo "... Memory"
 	@echo "... STL"
 	@echo "... Socket"
@@ -440,6 +481,9 @@ help:
 	@echo "... 5.Socket/1.TCP服务器.o"
 	@echo "... 5.Socket/1.TCP服务器.i"
 	@echo "... 5.Socket/1.TCP服务器.s"
+	@echo "... 6.Linux系统编程/5.线程/2.detach.o"
+	@echo "... 6.Linux系统编程/5.线程/2.detach.i"
+	@echo "... 6.Linux系统编程/5.线程/2.detach.s"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.o"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.i"
 	@echo "... 7.Algorithm/3.Tree/2.BalancedBinaryTree.s"

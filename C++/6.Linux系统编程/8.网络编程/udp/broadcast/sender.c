@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
     //获取socket
     int fd = socket(AF_INET, SOCK_DGRAM, 0);
 
-    //打开组播属性
+    //打开广播属性
     int flag = 1;
     setsockopt(fd, SOL_SOCKET, SO_BROADCAST, &flag, sizeof(flag));
 

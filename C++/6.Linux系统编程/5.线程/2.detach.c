@@ -4,7 +4,7 @@
 
 int i = 0;
 
-void* Thread()
+void* Thread(void* arg)
 {
     while(i++ < 10)
     {

@@ -77,27 +77,27 @@ include CMakeFiles/Linux.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Linux.dir/flags.make
 
-CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.o: CMakeFiles/Linux.dir/flags.make
-CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.o: ../6.Linux系统编程/8.网络编程/udp/unicast/receiver.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.o   -c /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c
+CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.o: CMakeFiles/Linux.dir/flags.make
+CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.o: ../6.Linux系统编程/5.线程/2.detach.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.o   -c /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/2.detach.c
 
-CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c > CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.i
+CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/2.detach.c > CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.i
 
-CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c -o CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.s
+CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/aoji/Documents/Unix_C/C++/6.Linux系统编程/5.线程/2.detach.c -o CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.s
 
 # Object files for target Linux
 Linux_OBJECTS = \
-"CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.o"
+"CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.o"
 
 # External object files for target Linux
 Linux_EXTERNAL_OBJECTS =
 
-Linux: CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.o
+Linux: CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.o
 Linux: CMakeFiles/Linux.dir/build.make
 Linux: CMakeFiles/Linux.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/aoji/Documents/Unix_C/C++/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Linux"

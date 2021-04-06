@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Linux.dir/6.Linux系统编程/8.网络编程/udp/unicast/receiver.c.o"
+  "CMakeFiles/Linux.dir/6.Linux系统编程/5.线程/2.detach.c.o"
   "Linux"
   "Linux.pdb"
 )
