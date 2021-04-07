@@ -6,9 +6,15 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 
+int fd;
+
+void Close()
+{
+	close(fd);
+}
+
 void* RecvThread(void* arg)
 {	
-	int fd = *(int*)arg;
 	char buf[BUFSIZ];
 	struct sockaddr_in remote_addr;
 	socklen_t addr_len = sizeof(remote_addr);
@@ -24,7 +30,6 @@ void* RecvThread(void* arg)
 
 		if(strcmp(buf, "exit") == 0)
 		{
-			close(fd);
 			exit(0);
 		}
 	}
@@ -42,12 +47,13 @@ int main(int argc, char* argv[])
 	}
 
 	//获取socket
-	int fd = socket(AF_INET, SOCK_DGRAM, 0);
+	fd = socket(AF_INET, SOCK_DGRAM, 0);
 	if(fd < 0)
 	{
 		perror("socket");
 		exit(-1);
 	}
+	atexit(Close);
 
 	//绑定地址
 	struct sockaddr_in local_addr;
@@ -61,35 +67,29 @@ int main(int argc, char* argv[])
 		exit(-1);
 	}
 
+	//接收线程
 	pthread_t pid;
-	pthread_create(&pid, NULL, RecvThread, (void*)&fd);
+	pthread_create(&pid, NULL, RecvThread, NULL);
 
 	//通信
-	char port[8];
-	char msg[BUFSIZ];
+	char buf[BUFSIZ];
+	char remote_port[8];
+	printf("remote port: ");
+	gets(remote_port);
 	struct sockaddr_in remote_addr;
 	remote_addr.sin_family = AF_INET;
+	remote_addr.sin_port = ntohs(atoi(remote_port));
 	remote_addr.sin_addr.s_addr = INADDR_ANY;
 	while(1)
 	{
-		remote_addr.sin_port = htons(atoi(port));
+		gets(buf);
+		sendto(fd, buf, sizeof(buf), 0, (void*) &remote_addr, sizeof(remote_addr));
 
-		puts("-------------------");
-		memset(port, '\0', sizeof(port));
-		memset(msg, '\0', sizeof(msg));
-		scanf("%s", port);
-		scanf("%s", msg);
-
-		sendto(fd, msg, sizeof(msg), 0, (void*) &remote_addr, sizeof(remote_addr));
-
-		if(strcmp(msg, "exit") == 0)
+		if(strcmp(buf, "exit") == 0)
 		{
-			pthread_cancel(pid);
-			break;
+			exit(0);
 		}
 	}
-
-	close(fd);
 
 	return 0;
 }

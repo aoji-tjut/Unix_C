@@ -27,10 +27,10 @@ int main(int argc, char* argv[])
 
     //通信
     char buf[BUFSIZ];
-    struct sockaddr_in remote_addr;                                 //对方地址结构体
-    remote_addr.sin_family = AF_INET;                               //协议族
-    remote_addr.sin_port = htons(atoi(argv[1]));                    //主机字节序转网络字节序
-    inet_pton(AF_INET, "224.2.2.2", &remote_addr.sin_addr);         //把点分十进制地址转化为网络字节序地址
+    struct sockaddr_in remote_addr;                             //对方地址结构体
+    remote_addr.sin_family = AF_INET;                           //协议族
+    remote_addr.sin_port = htons(atoi(argv[1]));                //主机字节序转网络字节序
+    inet_pton(AF_INET, "224.2.2.2", &remote_addr.sin_addr);     //把点分十进制地址转化为网络字节序地址
     while(1)
     {
         memset(buf, '\0', sizeof(buf));

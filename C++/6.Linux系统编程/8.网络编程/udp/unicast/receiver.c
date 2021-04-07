@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
         {
             recvfrom(fd, &buf, sizeof(buf), 0, (void*) &remote_addr, &addr_len);
 
-            inet_ntop(AF_INET, &remote_addr.sin_addr, remote_ip, sizeof(remote_ip));    //把网络字节序地址转化为点分十进制地址
+            inet_ntop(AF_INET, &remote_addr.sin_addr, remote_ip, sizeof(remote_ip));
             remote_port = ntohs(remote_addr.sin_port);
             printf("[%s/%d]: %s\n", remote_ip, remote_port, buf);
 
