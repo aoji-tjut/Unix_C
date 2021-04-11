@@ -28,15 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="842cbce7-7b84-4b61-90dd-a427ab21c1d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../C++/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/C++.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/C++.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/CMakeFiles/Linux.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/动态规划.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C++/cmake-build-debug/Grammar" beforeDir="false" afterPath="$PROJECT_DIR$/../C++/cmake-build-debug/Grammar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +64,7 @@
       <updated>1616556285915</updated>
       <workItem from="1616556287196" duration="30000" />
       <workItem from="1616853012144" duration="25000" />
+      <workItem from="1618069732440" duration="469000" />
     </task>
     <servers />
   </component>
