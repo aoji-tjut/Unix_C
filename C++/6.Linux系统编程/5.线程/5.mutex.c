@@ -15,7 +15,7 @@ pthread_mutex_t mutex;
 void* Thread(void* arg)
 {
     pthread_mutex_lock(&mutex);
-    printf("Thread %d\n", (int) arg);
+    printf("Thread %d\n", (int)arg);
     num++;
     pthread_mutex_unlock(&mutex);
 
@@ -29,7 +29,7 @@ int main()
     pthread_t tid[NUM];
     for(int i = 0; i < NUM; i++)
     {
-        pthread_create(tid + i, NULL, Thread, (void*) (i + 1));
+        pthread_create(tid + i, NULL, Thread, (void*)(i + 1));
     }
 
     for(int i = 0; i < NUM; i++)

@@ -31,7 +31,7 @@ void Error(const char* str, int line)
 
 void* Recv(void* args)
 {
-    struct thread_arg arg = *(struct thread_arg*) args;
+    struct thread_arg arg = *(struct thread_arg*)args;
     char buf[5];
     int ret;
 
@@ -62,7 +62,7 @@ void* Recv(void* args)
 
 void CloseFd(int status, void* arg)
 {
-    close(*(int*) arg);
+    close(*(int*)arg);
 }
 
 int CreateSocket(int port)
@@ -71,7 +71,7 @@ int CreateSocket(int port)
 
     int listen_fd = socket(AF_INET, SOCK_STREAM, 0);
     if(listen_fd < 0) Error("socket", __LINE__);
-    on_exit(CloseFd, (void*) &listen_fd);
+    on_exit(CloseFd, (void*)&listen_fd);
 
     int flag = 1;
     ret = setsockopt(listen_fd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
@@ -81,7 +81,7 @@ int CreateSocket(int port)
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(port);
     server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
-    ret = bind(listen_fd, (void*) &server_addr, sizeof(server_addr));
+    ret = bind(listen_fd, (void*)&server_addr, sizeof(server_addr));
     if(ret < 0) Error("bind", __LINE__);
 
     ret = listen(listen_fd, 1024);
@@ -106,7 +106,7 @@ int main(int argc, char* argv[])
 
     int epoll_fd = epoll_create(1);
     if(epoll_fd < 0) Error("epoll_create", __LINE__);
-    on_exit(CloseFd, (void*) &epoll_fd);
+    on_exit(CloseFd, (void*)&epoll_fd);
 
     struct epoll_event event;
     struct epoll_event wait_event[1024];
@@ -134,7 +134,7 @@ int main(int argc, char* argv[])
         {
             if(wait_event[i].data.fd == listen_fd)
             {
-                client_fd = accept(listen_fd, (void*) &client_addr, &client_addr_len);
+                client_fd = accept(listen_fd, (void*)&client_addr, &client_addr_len);
                 if(client_fd < 0) Error("accept", __LINE__);
 
                 inet_ntop(AF_INET, &client_addr.sin_addr, client_ip, sizeof(client_ip));
@@ -151,7 +151,7 @@ int main(int argc, char* argv[])
             else
             {
                 arg.client_fd = wait_event[i].data.fd;
-                pthread_create(&tid, NULL, Recv, (void*) &arg);
+                pthread_create(&tid, NULL, Recv, (void*)&arg);
                 pthread_detach(tid);
             }
         }

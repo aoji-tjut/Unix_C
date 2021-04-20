@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
     local_addr.sin_family = AF_INET;                        //协议族
     local_addr.sin_port = htons(atoi(argv[1]));             //主机字节序转网络字节序
     inet_pton(AF_INET, "0.0.0.0", &local_addr.sin_addr);    //把点分十进制地址转化为网络字节序地址 0.0.0.0自动识别本地ip
-    bind(fd, (void*) &local_addr, sizeof(local_addr));
+    bind(fd, (void*)&local_addr, sizeof(local_addr));
 
     //通信
     char buf[BUFSIZ];
@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
 
         if(FD_ISSET(fd, &set))
         {
-            recvfrom(fd, &buf, sizeof(buf), 0, (void*) &remote_addr, &addr_len);
+            recvfrom(fd, &buf, sizeof(buf), 0, (void*)&remote_addr, &addr_len);
 
             inet_ntop(AF_INET, &remote_addr.sin_addr, remote_ip, sizeof(remote_ip));
             remote_port = ntohs(remote_addr.sin_port);

@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
     remote_addr.sin_family = AF_INET;
     remote_addr.sin_port = htons(atoi(argv[1]));
     inet_pton(AF_INET, "0.0.0.0", &remote_addr.sin_addr);
-    connect(fd, (void*) &remote_addr, sizeof(remote_addr));
+    connect(fd, (void*)&remote_addr, sizeof(remote_addr));
 
     //通信
     char buf[BUFSIZ];

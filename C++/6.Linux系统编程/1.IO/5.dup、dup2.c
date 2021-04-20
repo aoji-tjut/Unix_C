@@ -37,7 +37,8 @@ int main(int argc, char* argv[])
 
     //原子操作 dup2 = close + dup
     int new_fd = 1;
-    dup2(fd, new_fd);   //关闭下标new_fd的文件描述符 把fd的位置复制到new_fd的位置(下标1的文件描述符复制为fd)并返回new_fd (若fd==new_fd则不会关闭new_fd 直接返回new_fd)
+    //关闭下标new_fd的文件描述符 把fd的位置复制到new_fd的位置(下标1的文件描述符复制为fd)并返回new_fd (若fd==new_fd则不会关闭new_fd 直接返回new_fd)
+    dup2(fd, new_fd);
     if(fd != new_fd)
     {
         close(fd);  //关闭下标3的fd

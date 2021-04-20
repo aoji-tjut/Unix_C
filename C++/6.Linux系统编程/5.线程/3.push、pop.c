@@ -16,13 +16,13 @@ void* Thread()
 
     //挂钩子 函数名 传参
     pthread_cleanup_push(Push, "1");
-        pthread_cleanup_push(Push, "2");
-            pthread_cleanup_push(Push, "3");
-                puts("Thread push finish");
+    pthread_cleanup_push(Push, "2");
+    pthread_cleanup_push(Push, "3");
+    puts("Thread push finish");
 
-                //卸钩子 1调用Push函数 0不调用Push函数
-            pthread_cleanup_pop(1);
-        pthread_cleanup_pop(1);
+    //卸钩子 1调用Push函数 0不调用Push函数
+    pthread_cleanup_pop(1);
+    pthread_cleanup_pop(1);
     pthread_cleanup_pop(0);
     puts("Thread pop finish");
 

@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
         memset(buf, '\0', sizeof(buf));
         gets(buf);
 
-        sendto(fd, buf, sizeof(buf), 0, (void*) &remote_addr, sizeof(remote_addr));
+        sendto(fd, buf, sizeof(buf), 0, (void*)&remote_addr, sizeof(remote_addr));
 
         if(strcmp(buf, "exit") == 0)
         {

@@ -60,11 +60,11 @@ int main()
     pthread_t p_tid[PNUM], c_tid[CNUM];
     for(int i = 0; i < PNUM; i++)
     {
-        pthread_create(p_tid + i, nullptr, Producer, (void*) (i + 1));
+        pthread_create(p_tid + i, nullptr, Producer, (void*)(i + 1));
     }
     for(int i = 0; i < CNUM; i++)
     {
-        pthread_create(p_tid + i, nullptr, Consumer, (void*) (i + 1));
+        pthread_create(p_tid + i, nullptr, Consumer, (void*)(i + 1));
     }
 
     for(auto i : p_tid)
