@@ -1,58 +1,153 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <string.h>
+#include <unistd.h>
+#include <signal.h>
+#include <fcntl.h>
+#include <pthread.h>
+#include <sys/epoll.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 
-//终端运行 输入port
+struct thread_arg
+{
+    int epoll_fd;
+    int client_fd;
+};
+
+void DealSignal(int arg)
+{
+    puts("SIGINT");
+    exit(0);
+}
+
+void Error(const char* str)
+{
+    perror(str);
+    exit(-1);
+}
+
+void* Recv(void* args)
+{
+    struct thread_arg arg = *(struct thread_arg*) args;
+    char buf[BUFSIZ];
+
+    memset(buf, '\0', sizeof(buf));
+    int ret = recv(arg.client_fd, buf, sizeof(buf), 0);
+
+    if(ret <= 0)
+    {
+        ret = epoll_ctl(arg.epoll_fd, EPOLL_CTL_DEL, arg.client_fd, NULL);
+        if(ret < 0) Error("epoll_ctl");
+
+        ret = close(arg.client_fd);
+        if(ret < 0) Error("close");
+        printf("fd=%d exit\n", arg.client_fd);
+    }
+    else
+    {
+        printf("fd=%d: %s\n", arg.client_fd, buf);
+    }
+
+    pthread_exit(NULL);
+}
+
+void CloseFd(int status, void* arg)
+{
+    close(*(int*) arg);
+}
+
+int CreateSocket(int port)
+{
+    int ret;
+
+    int listen_fd = socket(AF_INET, SOCK_STREAM, 0);
+    if(listen_fd < 0) Error("socket");
+    on_exit(CloseFd, (void*) &listen_fd);
+
+    int flag = 1;
+    ret = setsockopt(listen_fd, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
+    if(ret < 0) Error("setsockopt");
+
+    struct sockaddr_in server_addr;
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_port = htons(port);
+    server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    ret = bind(listen_fd, (void*) &server_addr, sizeof(server_addr));
+    if(ret < 0) Error("bind");
+
+    ret = listen(listen_fd, 1024);
+    if(ret < 0) Error("listen");
+
+    return listen_fd;
+}
+
 int main(int argc, char* argv[])
 {
     if(argc < 2)
     {
-        fprintf(stderr, "arg error\n");
+        fprintf(stderr, "port\n");
         exit(-1);
     }
 
-    //获取socket
-    int server_fd = socket(AF_INET, SOCK_STREAM, 0);
+    signal(SIGINT, DealSignal);
 
-    //绑定地址
-    struct sockaddr_in local_addr;
-    local_addr.sin_family = AF_INET;
-    local_addr.sin_port = htons(atoi(argv[1]));
-    inet_pton(AF_INET, "0.0.0.0", &local_addr.sin_addr);
-    bind(server_fd, (void*) &local_addr, sizeof(local_addr));
+    int ret;
 
-    //监听
-    listen(server_fd, 10);  //连接最大上限
+    int listen_fd = CreateSocket(atoi(argv[1]));
 
-    //接受连接
-    struct sockaddr_in remote_addr;
-    socklen_t addr_len = sizeof(remote_addr);
-    int client_fd = accept(server_fd, (void*) &remote_addr, &addr_len);
+    int epoll_fd = epoll_create(1);
+    if(epoll_fd < 0) Error("epoll_create");
+    on_exit(CloseFd, (void*) &epoll_fd);
 
-    //通信
-    char buf[BUFSIZ];
-    char remote_ip[32];
-    int remote_port;
+    struct epoll_event event;
+    struct epoll_event wait_event[1024];
+    event.data.fd = listen_fd;
+    event.events = EPOLLIN | EPOLLET;
+    ret = epoll_ctl(epoll_fd, EPOLL_CTL_ADD, listen_fd, &event);
+    if(ret < 0) Error("epoll_ctl");
+
+    int num;
+    int client_fd;
+    int client_port;
+    char client_ip[32];
+    struct sockaddr_in client_addr;
+    socklen_t client_addr_len = sizeof(client_addr);
+    pthread_t tid;
+    struct thread_arg arg;
+    arg.epoll_fd = epoll_fd;
+
     while(1)
     {
-        inet_ntop(AF_INET, &remote_addr.sin_addr, remote_ip, sizeof(remote_ip));
-        remote_port = ntohs(remote_addr.sin_port);
+        num = epoll_wait(epoll_fd, wait_event, sizeof(wait_event), -1);
+        if(num < 0) Error("epoll_wait");
 
-        recv(client_fd, buf, sizeof(buf), 0);
-
-        printf("[%s/%d]: %s\n", remote_ip, remote_port, buf);
-
-        if(strcmp(buf, "exit") == 0)
+        for(int i = 0; i < num; i++)
         {
-            break;
+            if(wait_event[i].data.fd == listen_fd)
+            {
+                client_fd = accept(listen_fd, (void*) &client_addr, &client_addr_len);
+                if(client_fd < 0) Error("accept");
+
+                inet_ntop(AF_INET, &client_addr.sin_addr, client_ip, sizeof(client_ip));
+                client_port = ntohs(client_addr.sin_port);
+                printf("new connect [%d-%s-%d]\n", client_fd, client_ip, client_port);
+
+                ret = fcntl(client_fd, F_SETFL, fcntl(client_fd, F_GETFL) | O_NONBLOCK);
+                if(ret < 0) Error("fcntl");
+
+                event.data.fd = client_fd;
+                ret = epoll_ctl(epoll_fd, EPOLL_CTL_ADD, client_fd, &event);
+                if(ret < 0) Error("epoll_ctl");
+            }
+            else
+            {
+                arg.client_fd = wait_event[i].data.fd;
+                pthread_create(&tid, NULL, Recv, (void*) &arg);
+                pthread_detach(tid);
+            }
         }
     }
-
-    close(client_fd);
-    close(server_fd);
 
     return 0;
 }
