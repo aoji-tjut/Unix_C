@@ -24,8 +24,7 @@ void DealSignal(int arg)
 
 void Error(const char* str, int line)
 {
-    perror(str);
-    printf("line = %d\n", line);
+    fprintf(stderr, "%s(%d): %s\n", str, line, strerror(errno));
     exit(-1);
 }
 
