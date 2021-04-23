@@ -20,5 +20,9 @@
 修改远程库地址		git remote set-url [远程库别名] [远程库地址]
 查看远程库链接		git remote -v
 
-移动本地库文件(夹)		git mv  [旧名] [新名]
+移动本地库文件(夹)		git mv [旧名] [新名]
 删除本地库文件(夹)		git rm (-r) [文件(夹)]
+
+查看日志			git log
+查看简介日志		git reflog
+还原提交记录 文件已修改	git reset --hard [ID]
