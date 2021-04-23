@@ -1,40 +1,24 @@
-git init			初始化
+初始化			init
+工作区->暂存区		git add [文件]
+暂存区->本地库		git commit -m ['描述信息']
+查看本地库状态		git status
 
-git congif user.name ***	设置用户名
-git congif user.email ***	设置用户邮箱
+远程库合并至本地		git pull (相当于fetch+merge)
+本地库->远程库		git push [远程库别名] [本地分支]:[远程分支]
+本地库->远程库		git push [远程库别名] [远程分支]
 
-git status			查看状态
-git add ***			添加至暂存区
-git commit -m [注释] ***		提交至本地库
-git commit -am [注释] ***	跳过add直接提交至本地库
-工作区->暂存区->本地库
+添加分支			git branch [分支名]
+删除分支			git branch -D [分支名]
+修改分支名		git branch -M [旧名] [新名]
+查看所有分支		git branch -a
+切换分支			git checkout [分支名]
+把分支合并到当前分支	git merge [分支名]
 
-git log				查看日志
-git log --oneline		简介查看日志
-git reflog			简洁查看日志指针
+添加远程库链接		git remote add [远程库别名] [远程库URL]
+删除远程库链接		git remote remove [远程库别名]
+修改远程库别名		git remote rename [旧名] [新名]
+修改远程库地址		git remote set-url [远程库别名] [远程库地址]
+查看远程库链接		git remote -v
 
-git reset --hard [指针位置]	移动HEAD指针
-git reset --hard^		向后移动一次HEAD指针
-git reset --hard～5		向后移动5次HEAD指针
-
-git rm ***			删除文件
-git reset --hard [指针位置]	删除操作已提交 找回文件
-git reset --hard HEAD		删除操作未提交 找回文件
-
-git diff ***			查看变更内容(与暂存区比较)
-git diff HEAD ***		查看变更内容(与本地库比较)
-不指定文件名则比较所有文件变更内容
-
-git branch -v			查看所有分支
-git branch ***			添加分支
-git branch -d ***		删除分支
-git checkout ***		切换分支
-git merge ***			把***分支合并到当前分支
-
-git remote -v			查看远程库信息
-git remote add *** [地址]	添加远程库地址并取别名
-git push [远程库地址] [本地库分支]	将本地库分支传到远程库
-git clone [地址]			远程库下载至本地库
-
-删除github上文件：
-先clone下来 在本地修改 再上传
+移动本地库文件(夹)		git mv  [旧名] [新名]
+删除本地库文件(夹)		git rm (-r) [文件(夹)]
