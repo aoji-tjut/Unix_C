@@ -28,18 +28,21 @@ using namespace std;
 
 int main()
 {
-    int j = 8;
-    int count = 0;
-    while(j)
-    {
-        int temp = j & 1;
-        if(temp == 1)
-        {
-            count++;
-        }
+    
 
-        j = j >> 1;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     return 0;
 }

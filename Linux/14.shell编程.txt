@@ -100,14 +100,14 @@ sed [选项] '动作' 文件名
 's'	字符串替换
 eg：sed -n '2p' a.txt			输出第2行
 eg：sed -i '2,4d' a.txt			在源文件删除2-4行
-eg：sed '2i hello' a.txt		第2行前插入hello
+eg：sed '2i hello' a.txt			第2行前插入hello
 eg：sed '2s/50/100/g' a.txt		把第2行50替换为100
 eg：sed -e '1s/1/2/g;s/3/4/g' a.txt	把第1行1替换为2 所有行3替换为4
 
 数值运算：
 eg：declare -i c=$a+$b	不能有空格
 eg：c=$(expr $a + $b)	括号里必须有空格
-eg：c=$(($a+$b))	括号里有没有空格都可
+eg：c=$(($a+$b))		括号里有没有空格都可
 
 判断文件类型：
 [ [选项] 文件名 ]
