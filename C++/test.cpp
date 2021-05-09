@@ -28,12 +28,20 @@ using namespace std;
 
 int main()
 {
-    
+    cout << 16 << endl;
 
+    map<char, int> m;
+    char c='a';
+    for(int i=0;i<5;i++)
+    {
 
+        cin >> m[c+i];
+    }
 
-
-
+    for(auto i : m)
+    {
+        cout << i.second<<endl;
+    }
 
 
 
