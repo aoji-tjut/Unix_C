@@ -26,22 +26,30 @@
 #include <climits>
 using namespace std;
 
+class A
+{
+public:
+    int i;
+    int* p;
+
+    A(int i)
+    {
+        this->i = i;
+        this->p = &this->i;
+    }
+};
+
 int main()
 {
-    cout << 16 << endl;
+    A a(10);
+    cout << a.p << " " << *a.p << endl;
 
-    map<char, int> m;
-    char c = 'a';
-    for(int i = 0; i < 5; i++)
-    {
+    A aa(a);
+    cout << aa.p << " " << *aa.p << endl;
 
-        cin >> m[c + i];
-    }
-
-    for(auto i : m)
-    {
-        cout << i.second << endl;
-    }
+    a.i++;
+    cout << a.p << " " << *a.p << endl;
+    cout << aa.p << " " << *aa.p << endl;
 
     return 0;
 }
