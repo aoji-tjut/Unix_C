@@ -47,6 +47,7 @@ int main()
     A aa(a);
     cout << aa.p << " " << *aa.p << endl;
 
+
     a.i++;
     cout << a.p << " " << *a.p << endl;
     cout << aa.p << " " << *aa.p << endl;
