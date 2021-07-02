@@ -77,16 +77,18 @@ void InOrderNoRecursive(Tree T)
     //树不为空或栈不为空
     while(p || !s.empty())
     {
-        if(p)                           //树不为空
+        while(p)
         {
-            s.push(p);                  //当前节点进栈
-            p = p->left_child;          //继续寻找左节点
+            s.push(p);
+            p = p->left_child;
         }
-        else                            //树为空栈不为空
+
+        if(!s.empty())
         {
-            Visit(s.top()->data);       //访问栈顶节点
-            p = s.top()->right_child;   //寻找栈顶节点右节点
-            s.pop();                    //栈顶节点出栈
+            p = s.top();
+            s.pop();
+            Visit(p->data);
+            p = p->right_child;
         }
     }
 }
