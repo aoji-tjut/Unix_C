@@ -26,31 +26,39 @@
 #include <climits>
 using namespace std;
 
-class A
-{
-public:
-    int i;
-    int* p;
-
-    A(int i)
-    {
-        this->i = i;
-        this->p = &this->i;
-    }
-};
-
 int main()
 {
-    A a(10);
-    cout << a.p << " " << *a.p << endl;
+    int a[10] = {1, 2, 3, 4, 4, 4, 4, 5, 6, 7};
+    int target = 4;
+    int l = 0;
+    int r = 9;
 
-    A aa(a);
-    cout << aa.p << " " << *aa.p << endl;
+    int temp;
+    while(l < r)
+    {
+        temp = (l + r) / 2;
+        if(a[temp] > target)
+        {
+            r = temp - 1;
+        }
+        if(a[temp] < target)
+        {
+            l = temp + 1;
+        }
+        else break;
+    }
 
-
-    a.i++;
-    cout << a.p << " " << *a.p << endl;
-    cout << aa.p << " " << *aa.p << endl;
+    int l_res, r_res;
+    for(int i = temp; a[i] == target; i--)
+    {
+        l_res = i;
+    }
+    cout << l_res;
+    for(int i = temp; a[i] == target; i++)
+    {
+        r_res = i;
+    }
+    cout << r_res;
 
     return 0;
 }
