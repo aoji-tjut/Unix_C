@@ -26,39 +26,25 @@
 #include <climits>
 using namespace std;
 
+void A(int* a, int n)
+{
+    for(int i = 0; i < n; i++)
+    {
+        a[i]++;
+    }
+}
+
 int main()
 {
-    int a[10] = {1, 2, 3, 4, 4, 4, 4, 5, 6, 7};
-    int target = 4;
-    int l = 0;
-    int r = 9;
+    int a[5] = {1, 2, 3, 4, 5};
+    cout << sizeof(a) << endl;
 
-    int temp;
-    while(l < r)
-    {
-        temp = (l + r) / 2;
-        if(a[temp] > target)
-        {
-            r = temp - 1;
-        }
-        if(a[temp] < target)
-        {
-            l = temp + 1;
-        }
-        else break;
-    }
+    A(a, sizeof(a) / sizeof(*a));
 
-    int l_res, r_res;
-    for(int i = temp; a[i] == target; i--)
+    for(int i = 0; i < 5; i++)
     {
-        l_res = i;
+        cout << a[i] << endl;
     }
-    cout << l_res;
-    for(int i = temp; a[i] == target; i++)
-    {
-        r_res = i;
-    }
-    cout << r_res;
 
     return 0;
 }
