@@ -26,25 +26,17 @@
 #include <climits>
 using namespace std;
 
-void A(int* a, int n)
+typedef struct Node
 {
-    for(int i = 0; i < n; i++)
-    {
-        a[i]++;
-    }
-}
+    int data;
+    struct Node* next;
+    struct Node* prev;
+} Node, * pN;
 
 int main()
 {
-    int a[5] = {1, 2, 3, 4, 5};
-    cout << sizeof(a) << endl;
-
-    A(a, sizeof(a) / sizeof(*a));
-
-    for(int i = 0; i < 5; i++)
-    {
-        cout << a[i] << endl;
-    }
+    int a[1100000000]={1,2,3,4,5,6,7,8,9,10};
+    //a[9]
 
     return 0;
 }
