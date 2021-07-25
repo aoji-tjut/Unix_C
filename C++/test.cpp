@@ -26,17 +26,19 @@
 #include <climits>
 using namespace std;
 
-typedef struct Node
+struct Node
 {
-    int data;
+    char c;
+    struct Node* pri;
     struct Node* next;
-    struct Node* prev;
-} Node, * pN;
+};
 
 int main()
 {
-    int a[1100000000]={1,2,3,4,5,6,7,8,9,10};
-    //a[9]
+    struct Node* q;
+    q=p->next;
+
+
 
     return 0;
 }
